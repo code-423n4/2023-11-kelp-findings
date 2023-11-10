@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "orion",
+  "risk": "2",
+  "title": "Transfer and TransferFrom are checked as bool return results for DoS",
+  "issueId": 29,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/29"
+}
