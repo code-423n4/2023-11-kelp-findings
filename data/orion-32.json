@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "orion",
+  "risk": "2",
+  "title": "Missing checks on the prices given by ChainLink oracles",
+  "issueId": 32,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/32"
+}
