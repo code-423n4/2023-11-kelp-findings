@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "critical-or-high",
+  "risk": "2",
+  "title": "LRTConfig should ensure there is one account with DEFAULT_ADMIN_ROLE",
+  "issueId": 79,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/79"
+}
