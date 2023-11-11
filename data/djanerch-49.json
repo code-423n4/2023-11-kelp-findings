@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "djanerch",
+  "risk": "2",
+  "title": "No storage gap for upgradeable contract might lead to storage slot collisions",
+  "issueId": 49,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/49"
+}
