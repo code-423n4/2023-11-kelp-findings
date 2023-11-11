@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xbrett8571",
+  "risk": "3",
+  "title": "The `_mintRsETH` function may issue incorrect `RSETH` amounts if total deposits change during processing.",
+  "issueId": 76,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/76"
+}
