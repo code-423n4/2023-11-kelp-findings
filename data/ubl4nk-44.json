@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ubl4nk",
+  "risk": "2",
+  "title": "Denial of Service (DOS) on `depositAsset`",
+  "issueId": 44,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/44"
+}
