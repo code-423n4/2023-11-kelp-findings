@@ -20,6 +20,8 @@ The codebase complexity was low (a good thing). Functions are very short and it 
 
 One strange thing about the codebase is that ReEntrancy Guard is used for Admin Functions. Perhaps it would reduce some rug attack vectors, but admin is a trusted role, so it may not be necessary.
 
+One noticable code smell that could lead to vulnerabilities is the use of `balanceOf`. This is easy to manipulate by sending tokens to the contract directly, which can break the internal accounting.
+
 ### Centralization Risks
 
 The codebase is highly centralized. As noted in the quality analysis, almost everything is access controlled by manager. The manager can add nodes, change maximum nodes, pause, unpause, direct funds among other actions. However, this is by design for the protocol and admin is assumed to be a trusted role for the audit.
@@ -39,6 +41,8 @@ Admin can perform pause/unpause functionality as well as updating nodeOperators 
 ### Systemic Risks
 
 Since the admin controls so many important functions, the systemic risks are mainly related to private keys being lost and admin abusing power.
+
+
 
 
 
