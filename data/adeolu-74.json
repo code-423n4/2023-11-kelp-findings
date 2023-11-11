@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "adeolu",
+  "risk": "2",
+  "title": "user can donate tiny amounts of an asset with very cheap price but have 0 RSETH minted to user",
+  "issueId": 74,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/74"
+}
