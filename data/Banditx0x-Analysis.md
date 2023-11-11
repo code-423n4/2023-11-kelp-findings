@@ -40,5 +40,7 @@ Admin can perform pause/unpause functionality as well as updating nodeOperators 
 
 Since the admin controls so many important functions, the systemic risks are mainly related to private keys being lost and admin abusing power.
 
+
+
 ### Time spent:
 15 hours
