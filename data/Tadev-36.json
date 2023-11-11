@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Tadev",
+  "risk": "3",
+  "title": "Any mistake from the admin when calling `addNodeDelegatorContractToQueue` function would lead to permanent DOS for deposit functionality of the contract.",
+  "issueId": 36,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/36"
+}
