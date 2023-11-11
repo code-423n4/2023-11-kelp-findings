@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "critical-or-high",
+  "risk": "3",
+  "title": "getRSETHPrice() could be manipulated by donating LSTs to LTRDepositPool",
+  "issueId": 78,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/78"
+}
