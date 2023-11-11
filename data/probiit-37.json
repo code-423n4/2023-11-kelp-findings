@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "probiit",
+  "risk": "2",
+  "title": "Access Control Mismatch - onlyLRTManager should be used in place of LRTAdmin",
+  "issueId": 37,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/37"
+}
