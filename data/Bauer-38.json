@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Bauer",
+  "risk": "2",
+  "title": "Lack of deletion mechanism for assets poses security risk in the protocol",
+  "issueId": 38,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/38"
+}
