@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ujjwal001_eth",
+  "risk": "2",
+  "title": "In LRTDepositPool.sol, on Natspec it says only callable by LRT manager but it callable only by onlyLRTAdmin",
+  "issueId": 52,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/52"
+}
