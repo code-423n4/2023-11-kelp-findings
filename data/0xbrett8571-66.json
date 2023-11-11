@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xbrett8571",
+  "risk": "2",
+  "title": "High Gas Costs due to Duplicate External Calls.",
+  "issueId": 66,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/66"
+}
