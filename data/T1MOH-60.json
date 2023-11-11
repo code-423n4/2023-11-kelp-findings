@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "T1MOH",
+  "risk": "3",
+  "title": "Protocol is vulnerable to first depositor attack",
+  "issueId": 60,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/60"
+}
