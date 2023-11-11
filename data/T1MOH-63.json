@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "T1MOH",
+  "risk": "2",
+  "title": "ChainlinkPriceOracle.sol will consume stale price",
+  "issueId": 63,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/63"
+}
