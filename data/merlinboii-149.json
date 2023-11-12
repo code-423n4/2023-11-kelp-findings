@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "merlinboii",
+  "risk": "3",
+  "title": "Lack of Duplicate Check in the `addNodeDelegatorContractToQueue` Function",
+  "issueId": 149,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/149"
+}
