@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xmystery",
+  "risk": "2",
+  "title": "Lack of Deadline in depositAsset Function Exposing Users to Execution Delays and Price Risks",
+  "issueId": 102,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/102"
+}
