@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xNaN",
+  "risk": "3",
+  "title": "Depositing assets will cause an unexpected increase in the price of RSETH",
+  "issueId": 105,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/105"
+}
