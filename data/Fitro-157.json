@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Fitro",
+  "risk": "2",
+  "title": "LRTDepositPool.sol::getAssetDistributionData() could return incorrect balances provocating an incorrect calculation of rsETH price.",
+  "issueId": 157,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/157"
+}
