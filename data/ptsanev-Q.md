@@ -1,0 +1,1 @@
+[L-01] - supported assets can be added, but cannot be later removed, so rsETH can be maliciously minted
