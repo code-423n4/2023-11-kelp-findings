@@ -1,5 +1,5 @@
-## [L-01] The @dev NatSpec comment in UtilLib.checkNonZeroAddress is incorrect
-The NatSpec for the checkNonZeroAddress function should indicate that it is a function, not a modifier.
+## [L-01] The `@dev` NatSpec comment in `UtilLib.checkNonZeroAddress` is incorrect
+The NatSpec for the `checkNonZeroAddress()` function should indicate that it is a function, not a modifier.
 ````diff
 src/utils/UtilLib.sol
 -   /// @dev zero address check modifier
