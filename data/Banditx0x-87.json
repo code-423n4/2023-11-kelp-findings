@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Banditx0x",
+  "risk": "3",
+  "title": "Incorrect Import Directory For OpenZeppelin's `PausableUpgradable` Contract",
+  "issueId": 87,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/87"
+}
