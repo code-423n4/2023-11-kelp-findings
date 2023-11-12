@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "pipidu83",
+  "risk": "2",
+  "title": "```getAssetCurrentLimit``` can unexpectedly revert ",
+  "issueId": 116,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/116"
+}
