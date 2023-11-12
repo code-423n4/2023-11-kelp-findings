@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "critical-or-high",
+  "risk": "2",
+  "title": "depositAsset() should be pausable per asset",
+  "issueId": 124,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/124"
+}
