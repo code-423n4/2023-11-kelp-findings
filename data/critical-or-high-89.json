@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "critical-or-high",
+  "risk": "3",
+  "title": "NodeDelegator is missing functionality to delegate and withdraw shares on Eigen Layer",
+  "issueId": 89,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/89"
+}
