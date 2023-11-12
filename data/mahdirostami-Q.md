@@ -23,7 +23,7 @@ Which currently are [100000000000000000000000](https://etherscan.io/address/0x54
 use amount as an argument instead of the balance of the contract
 # 2. Not considering token decimals
 ## Summary
-in the share calculation protocol assume that all assets have 18 decimals or oracles give a price in 18 decimals, but it couldn't be true in the future, so assets with different decimals could result in wrong share calculation.
+in the share calculation, the protocol assumes that all assets have 18 decimals and oracles give a price in 18 decimals as well, for now, it doesn't have any concern, but it couldn't be true in the future, so assets with different decimals or prices with different decimals could result in wrong share calculation.
 ```solidity
         rsethAmountToMint = (amount * lrtOracle.getAssetPrice(asset)) / lrtOracle.getRSETHPrice();
 ```
