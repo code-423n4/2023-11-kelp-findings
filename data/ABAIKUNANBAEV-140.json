@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "getDepositAssetCurrentLimit() may underflow if total asset deposits > deposit limit",
+  "issueId": 140,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/140"
+}
