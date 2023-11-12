@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xDemon",
+  "risk": "2",
+  "title": "Some Token Can Be Reverted on Large Approvals or Transfers",
+  "issueId": 120,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/120"
+}
