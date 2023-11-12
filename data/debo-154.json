@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "debo",
+  "risk": "2",
+  "title": "[M-02] UNCHECKED ARRAY LENGTH in LRTDepositPool contract",
+  "issueId": 154,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/154"
+}
