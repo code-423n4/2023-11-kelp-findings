@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "TheSchnilch",
+  "risk": "2",
+  "title": "As long as  an asset does not have a strategy set, `depositAsset` is not working",
+  "issueId": 146,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/146"
+}
