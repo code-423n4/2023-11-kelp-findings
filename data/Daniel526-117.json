@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Daniel526",
+  "risk": "2",
+  "title": "Risk of Inaccurate Balances when fetching asset balances from getAssetBalances function",
+  "issueId": 117,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/117"
+}
