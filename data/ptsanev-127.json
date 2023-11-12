@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ptsanev",
+  "risk": "2",
+  "title": "LRTOracle.sol - potential problems when integrating with Chainlink oracles",
+  "issueId": 127,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/127"
+}
