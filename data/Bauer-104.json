@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Bauer",
+  "risk": "2",
+  "title": "Using the collateral assets' oracle price at 100% of its value to mint USSD without a fee can be used for arbitrage",
+  "issueId": 104,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/104"
+}
