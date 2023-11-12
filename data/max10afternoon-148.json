@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "max10afternoon",
+  "risk": "2",
+  "title": "Lack of slippage control on LRTDepositPool.depositAsset",
+  "issueId": 148,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/148"
+}
