@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Daniel526",
+  "risk": "2",
+  "title": "Inadequate Asset Balance Check in `transferAssetToNodeDelegator` Function",
+  "issueId": 147,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/147"
+}
