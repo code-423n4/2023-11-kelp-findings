@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xDemon",
+  "risk": "2",
+  "title": "Low decimals tokens can cause the rsETH allocation to be minted for users = 0",
+  "issueId": 122,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/122"
+}
