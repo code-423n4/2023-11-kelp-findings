@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Aamir",
+  "risk": "2",
+  "title": "Contracts cannot be upgraded because they do not inherit from `UUPSUpgradeable`",
+  "issueId": 129,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/129"
+}
