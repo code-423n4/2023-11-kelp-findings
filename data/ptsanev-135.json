@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ptsanev",
+  "risk": "2",
+  "title": "getRSETHPrice() - wrong exchange rate value",
+  "issueId": 135,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/135"
+}
