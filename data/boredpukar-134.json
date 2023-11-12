@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "boredpukar",
+  "risk": "2",
+  "title": "Relying solely on ChainLink can be problematic when the oracle data feed is blocked.",
+  "issueId": 134,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/134"
+}
