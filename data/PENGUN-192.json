@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "PENGUN",
+  "risk": "2",
+  "title": "Misconfiguration of assetStrategy cause DoS",
+  "issueId": 192,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/192"
+}
