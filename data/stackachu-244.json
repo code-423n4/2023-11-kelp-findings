@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "stackachu",
+  "risk": "2",
+  "title": "Permanent infinite approval of assets gives EigenLayer Strategy Manager more access than necessary",
+  "issueId": 244,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/244"
+}
