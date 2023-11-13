@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "marchev",
+  "risk": "2",
+  "title": "`LRTDepositPool#depositAsset()` User can deposit assets and receive rsETH at a heavily discounted price",
+  "issueId": 215,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/215"
+}
