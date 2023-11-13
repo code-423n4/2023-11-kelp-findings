@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "PENGUN",
+  "risk": "2",
+  "title": "The lack of stale price check in getAssetPrice could lead to incorrect pricing of RSETH.",
+  "issueId": 206,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/206"
+}
