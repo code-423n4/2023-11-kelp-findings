@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "evmboi32",
+  "risk": "3",
+  "title": "Anyone could break the ```rsETH``` price by directly sending tokens to ```LRTDepositPool``` or ```NodeDelegator```.",
+  "issueId": 245,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/245"
+}
