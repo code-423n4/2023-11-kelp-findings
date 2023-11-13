@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "crack-the-kelp",
+  "risk": "3",
+  "title": "Different config across different contract will cause important functionality to revert",
+  "issueId": 190,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/190"
+}
