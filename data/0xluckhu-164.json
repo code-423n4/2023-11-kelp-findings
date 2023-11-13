@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xluckhu",
+  "risk": "3",
+  "title": "Logic issue to include new deposit amount into the calculation of rsETH price in LRTDepositPool::depositAsset()",
+  "issueId": 164,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/164"
+}
