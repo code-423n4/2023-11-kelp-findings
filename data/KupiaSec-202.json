@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "KupiaSec",
+  "risk": "3",
+  "title": "Price calculation of `rsETH` without considering underlying token decimals will lead to the wrong amount of `rsETH` minted",
+  "issueId": 202,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/202"
+}
