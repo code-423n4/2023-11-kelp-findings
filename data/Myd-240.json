@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Myd",
+  "risk": "2",
+  "title": "Deposit Bypass in LRTDepositPool due to insufficient asset validation.",
+  "issueId": 240,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/240"
+}
