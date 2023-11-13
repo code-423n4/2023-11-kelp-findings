@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Shaheen",
+  "risk": "2",
+  "title": "EigenLayer share rate can be massively inflated by griefing attacks, resulting in NodeDelegator receiving fewer shares",
+  "issueId": 230,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/230"
+}
