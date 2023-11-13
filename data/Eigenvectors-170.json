@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Eigenvectors",
+  "risk": "2",
+  "title": "Missing Oracle Validation",
+  "issueId": 170,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/170"
+}
