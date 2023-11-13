@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "rouhsamad",
+  "risk": "3",
+  "title": "minting of rsETH could be disabled by initialy minting 1 wei of rsETH and inflating the price",
+  "issueId": 219,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/219"
+}
