@@ -1,4 +1,22 @@
-To optimize gas consumption in the getRSETHPrice function of the LRTOracle contract, especially when dealing with a potentially large number of assets, you can employ two main strategies: capping the number of assets processed in a single call and using a more gas-efficient method to aggregate prices. Here's how you can implement these strategies:
+NodeDelegator contract
+
+1. Gas Optimization
+a. Efficient Approval Management
+The maxApproveToEigenStrategyManager function sets an unlimited allowance. Consider setting a specific allowance amount to reduce potential risks and improve gas efficiency in certain scenarios.
+Here's how to implement this strategy:
+
+function maxApproveToEigenStrategyManager(address asset, uint256 amount)
+    external
+    onlySupportedAsset(asset)
+    onlyLRTManager
+{
+    address eigenlayerStrategyManagerAddress = lrtConfig.getContract(LRTConstants.EIGEN_STRATEGY_MANAGER);
+    IERC20(asset).approve(eigenlayerStrategyManagerAddress, amount);
+}
+
+
+LRTOracle contract
+To optimize gas consumption in the getRSETHPrice function, especially when dealing with a potentially large number of assets, you can employ two main strategies: capping the number of assets processed in a single call and using a more gas-efficient method to aggregate prices. Here's how you can implement these strategies:
 
 1. Capping the Number of Assets Processed in a Single Call
 You can modify the getRSETHPrice function to process a subset of assets at a time. This can be achieved by adding parameters for pagination.
@@ -52,9 +70,3 @@ function getRSETHPrice() external view returns (uint256 rsETHPrice) {
     }
     return aggregatedTotalETH / rsEthSupply;
 }
-Additional Considerations
-Security: Ensure that the off-chain system is secure and reliable, as it plays a crucial role in data aggregation.
-Governance and Transparency: Establish clear governance procedures for who can update the aggregated data and how often it should be updated.
-Fallback Mechanism: Implement a fallback mechanism in case the off-chain system fails or the on-chain data becomes stale or inaccurate.
-Regular Updates: The off-chain system should update the on-chain data regularly to reflect the latest market conditions.
-Implementing these strategies can significantly reduce the gas costs associated with processing a large number of assets, especially in a DeFi context where efficiency and scalability are crucial.
