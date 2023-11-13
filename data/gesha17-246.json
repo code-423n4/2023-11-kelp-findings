@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "gesha17",
+  "risk": "2",
+  "title": "RSETH Minter and Burner roles should only point to LRTDepositPool, but can be reassigned by admin",
+  "issueId": 246,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/246"
+}
