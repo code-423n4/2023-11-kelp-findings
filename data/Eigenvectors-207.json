@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Eigenvectors",
+  "risk": "2",
+  "title": "The rsETH amount to mint calculation can lead to loss of funds",
+  "issueId": 207,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/207"
+}
