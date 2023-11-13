@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Soul22",
+  "risk": "2",
+  "title": "`getRsETHAmountToMint()` is susceptible to precision loss due to division before multiplication",
+  "issueId": 249,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/249"
+}
