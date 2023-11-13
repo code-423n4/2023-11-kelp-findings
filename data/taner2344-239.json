@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "taner2344",
+  "risk": "2",
+  "title": "```getAssetCurrentLimit‎``` is compromising the protocol's availability.",
+  "issueId": 239,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/239"
+}
