@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "niki",
+  "risk": "2",
+  "title": "It should be divided by token.decimals in `getRsETHAmountToMint`",
+  "issueId": 205,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/205"
+}
