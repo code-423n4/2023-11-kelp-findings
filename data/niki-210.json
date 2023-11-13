@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "niki",
+  "risk": "2",
+  "title": "the rsethAmountoMint can be round to 0 and there is no check for that",
+  "issueId": 210,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/210"
+}
