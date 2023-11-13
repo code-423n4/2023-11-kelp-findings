@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "peter",
+  "risk": "3",
+  "title": "Deposit Pool Vulnerable to 4626-style Vault Inflation Attack - Users Will Lose ALL Funds",
+  "issueId": 257,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/257"
+}
