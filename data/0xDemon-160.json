@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xDemon",
+  "risk": "3",
+  "title": "Malicious actor can minted more rsETH than the assets he deposited by depositing high decimals tokens as assets",
+  "issueId": 160,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/160"
+}
