@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "TheSchnilch",
+  "risk": "2",
+  "title": "`nodeDelegatorQueue` can contain duplicate elements, leading to incorrect calculations of the rsETH price",
+  "issueId": 243,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/243"
+}
