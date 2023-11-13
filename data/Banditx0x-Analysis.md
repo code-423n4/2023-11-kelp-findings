@@ -1,3 +1,11 @@
+### Contextualizing findings
+
+I found that the code did not compile and eventually realised it was an OpenZeppelin library which was wrongly speicified which is the source of one of my findings.
+
+The well known "first depositor share inflation attack" for ERC4626 vaults seems like it also applies here even though it is a staking protocol and not an ERC4626 vault
+
+Another issue considers rounding/precision loss. Rounding should always be against the user, so attackers cannot mint small amounts and get more than they should due to precision loss in their favor. However there is an instance of rounding in depositors favor which can be abused.
+
 ### Approach Taken in Evaluating the Codebase
 
 Normally, experimenting with different input parameters and external functions that are not admin restricted is a good way to find bugs. However almost everything is restricted in Kelp. Therefore a different approach is needed.
@@ -41,6 +49,10 @@ Admin can perform pause/unpause functionality as well as updating nodeOperators 
 ### Systemic Risks
 
 Since the admin controls so many important functions, the systemic risks are mainly related to private keys being lost and admin abusing power.
+
+There are risks with EigenLayer. Since there are many different staking tokens, the depegging of a single token can put the whole EigenLayer system at risk. This also propogates to KelpDao.
+
+
 
 
 
