@@ -1,10 +1,10 @@
-## Impact
-onlySupportedAsset modifier exists in two places and at some point a small change in one of the modifiers can lead to forgetting to change it in the other one -> Bugs.
+1.
+Defining DEFAULT_ADMIN_ROLE should be moved from:
+https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConfigRoleChecker.sol#L28
 
-## Proof of Concept
+to LRTConstants.sol for more consistency and mitigating bugs.
 
-## Tools Used
-Manual analysis
-
-## Recommended Mitigation Steps
-For me it looks like this should only exist in LRTConfig.sol, because the RoleChecker contract is more for roles.
+2.
+onlySupportedAsset modifier exists in two places.
+Changing one in future can lead to bugs if forgetting the change the other one.
+Recommendation: To remain only in LRTConfig.sol, as the RoleChecker contract is more for role things.
