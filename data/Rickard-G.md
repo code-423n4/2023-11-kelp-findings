@@ -103,11 +103,7 @@ src/oracles/ChainlinkPriceOracle.sol
 [https://github.com/code-423n4/2023-11-kelp/blob/c5fdc2e62c5e1d78769f44d6e34a6fb9e40c00f0/src/oracles/ChainlinkPriceOracle.sol#L38](https://github.com/code-423n4/2023-11-kelp/blob/c5fdc2e62c5e1d78769f44d6e34a6fb9e40c00f0/src/oracles/ChainlinkPriceOracle.sol#L38)
 
 [https://github.com/code-423n4/2023-11-kelp/blob/c5fdc2e62c5e1d78769f44d6e34a6fb9e40c00f0/src/oracles/ChainlinkPriceOracle.sol#L47](https://github.com/code-423n4/2023-11-kelp/blob/c5fdc2e62c5e1d78769f44d6e34a6fb9e40c00f0/src/oracles/ChainlinkPriceOracle.sol#L47)
-## [G-03] Multiple `address/bytes` mappings can be combined into a single mapping of an `address/bytes` to a `struct`, where appropriate
-## Relevant GitHub Links
-[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L13-L14](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L13-L14)
-
-[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L15-L17](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L15-L17)
+## [G-03] Multiple `address/bytes32` mappings can be combined into a single mapping of an `address/bytes32` to a `struct`, where appropriate
 ## Summary
 ````solidity
 src/LRTConfig.sol
