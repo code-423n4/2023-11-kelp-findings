@@ -116,8 +116,9 @@ src/LRTConfig.sol
 ````
 [https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L13-L14](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L13-L14)
 ````solidity
-    mapping(address token => bool isSupported) public isSupportedAsset;
-    mapping(address token => uint256 amount) public depositLimitByAsset;
-    mapping(address token => address strategy) public override assetStrategy;
+src/LRTConfig.sol
+15:    mapping(address token => bool isSupported) public isSupportedAsset;
+16:    mapping(address token => uint256 amount) public depositLimitByAsset;
+17:    mapping(address token => address strategy) public override assetStrategy;
 ````
 [https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L15-L17](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L15-L17)
