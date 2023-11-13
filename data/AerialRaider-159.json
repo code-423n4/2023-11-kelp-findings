@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "AerialRaider",
+  "risk": "2",
+  "title": "Error Handling for Oracle Calls in getAssetPrice() to manage instances where the oracle might be unavailable or return invalid data",
+  "issueId": 159,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/159"
+}
