@@ -103,3 +103,16 @@ src/oracles/ChainlinkPriceOracle.sol
 [https://github.com/code-423n4/2023-11-kelp/blob/c5fdc2e62c5e1d78769f44d6e34a6fb9e40c00f0/src/oracles/ChainlinkPriceOracle.sol#L38](https://github.com/code-423n4/2023-11-kelp/blob/c5fdc2e62c5e1d78769f44d6e34a6fb9e40c00f0/src/oracles/ChainlinkPriceOracle.sol#L38)
 
 [https://github.com/code-423n4/2023-11-kelp/blob/c5fdc2e62c5e1d78769f44d6e34a6fb9e40c00f0/src/oracles/ChainlinkPriceOracle.sol#L47](https://github.com/code-423n4/2023-11-kelp/blob/c5fdc2e62c5e1d78769f44d6e34a6fb9e40c00f0/src/oracles/ChainlinkPriceOracle.sol#L47)
+## [G-03] Multiple address mappings can be combined into a single mapping of an address to a struct, where appropriate
+````solidity
+src/LRTConfig.sol
+13:    mapping(bytes32 tokenKey => address tokenAddress) public tokenMap;
+14:    mapping(bytes32 contractKey => address contractAddress) public contractMap;
+````
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L13-L14](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L13-L14)
+````solidity
+    mapping(address token => bool isSupported) public isSupportedAsset;
+    mapping(address token => uint256 amount) public depositLimitByAsset;
+    mapping(address token => address strategy) public override assetStrategy;
+````
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L15-L17](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L15-L17)
