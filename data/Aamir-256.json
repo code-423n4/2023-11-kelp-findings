@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Aamir",
+  "risk": "3",
+  "title": "Less `RSETH` tokens will be minted to the users when depositing tokens using `LRTDepositPool::deposit(...)` because of incorrect placement of state update",
+  "issueId": 256,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/256"
+}
