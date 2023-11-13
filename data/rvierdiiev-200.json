@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "rvierdiiev",
+  "risk": "3",
+  "title": "Depositor receives smaller amount of rsETH token because of transfer before price calculation",
+  "issueId": 200,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/200"
+}
