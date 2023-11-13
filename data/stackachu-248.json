@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "stackachu",
+  "risk": "2",
+  "title": "Minting of zero amount in `LRTDepositPool.depositAsset()` can cause users to lose deposited assets",
+  "issueId": 248,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/248"
+}
