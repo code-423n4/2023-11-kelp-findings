@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "crack-the-kelp",
+  "risk": "3",
+  "title": "rsETH tokens will be useless if admin updates the rsETH address in LRTConfig",
+  "issueId": 184,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/184"
+}
