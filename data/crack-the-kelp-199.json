@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "crack-the-kelp",
+  "risk": "2",
+  "title": "getAssetCurrentLimit can revert causing depositAsset to revert",
+  "issueId": 199,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/199"
+}
