@@ -41,8 +41,8 @@ In the future, there can be unlimited strategies and tokens can be added so it c
 ###### if one of the contracts is paused, all contracts should be paused 
 ex: 
 rsETH is paused then the whole system should be paused and all calls should revert you shouldn't be able to remove rsETH token to new one and then be able to deposit it. 
-You should also implement the same state so you can't have state where 
+You should also implement the same state so you can't have a state where 
 Admin -> pauses token contract 
 Admin sets new token contract 
-user can deposit maybe when the admin didn't want that action.
+Users can deposit maybe when the admin doesn't want that action.
 Admin should pause the whole state so they can manage the whole state.
