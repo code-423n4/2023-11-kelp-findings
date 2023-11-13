@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "niki",
+  "risk": "2",
+  "title": "If there is a supported token that is different from 18 decimals, the calculation in `getRSETHPrice` will be wrong forever",
+  "issueId": 214,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/214"
+}
