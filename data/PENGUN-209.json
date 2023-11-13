@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "PENGUN",
+  "risk": "2",
+  "title": "The absence of a slippage check when minting RSETH can lead to minting at an unintended rate.",
+  "issueId": 209,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/209"
+}
