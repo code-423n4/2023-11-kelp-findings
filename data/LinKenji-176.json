@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "LinKenji",
+  "risk": "2",
+  "title": "Lack of Validation in `LRTDepositPool.transferAssetToNodeDelegator` Allows Out-of-Bounds Transfers.",
+  "issueId": 176,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/176"
+}
