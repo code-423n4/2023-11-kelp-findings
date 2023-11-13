@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "adeolu",
+  "risk": "2",
+  "title": "price returned from chainlink `latestAnswer()` is int not uint. `getAssetPrice()` can return false values",
+  "issueId": 225,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/225"
+}
