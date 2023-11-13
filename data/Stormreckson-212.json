@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Stormreckson",
+  "risk": "2",
+  "title": "NodeDelegatorContract can't be removed and possible  confusion due to lack of existence check",
+  "issueId": 212,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/212"
+}
