@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "glcanvas",
+  "risk": "2",
+  "title": "NodeDelegator can't revoke approve in case of emergency",
+  "issueId": 216,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/216"
+}
