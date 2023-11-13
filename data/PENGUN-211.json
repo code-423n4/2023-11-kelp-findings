@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "PENGUN",
+  "risk": "2",
+  "title": "When NodeDelegator is added multiple times , the RSETH price abnormally increases, causing loss to users minting at that time.",
+  "issueId": 211,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/211"
+}
