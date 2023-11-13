@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xluckhu",
+  "risk": "2",
+  "title": "Lack of whenNotPaused guard in LRTOracle",
+  "issueId": 169,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/169"
+}
