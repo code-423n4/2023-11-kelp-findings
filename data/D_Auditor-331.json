@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "D_Auditor",
+  "risk": "3",
+  "title": "The first minter address can mint rsETH up to the current limit with the help of a flashloan, and can also temporarily cause a Denial of Service for other users.",
+  "issueId": 331,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/331"
+}
