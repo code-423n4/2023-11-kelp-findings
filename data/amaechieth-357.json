@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "amaechieth",
+  "risk": "3",
+  "title": "Rounding error when depositing will cause loss of funds for caller",
+  "issueId": 357,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/357"
+}
