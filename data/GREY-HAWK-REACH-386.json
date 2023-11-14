@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "GREY-HAWK-REACH",
+  "risk": "2",
+  "title": "The max amount for a single deposit into EigenLayer strategy can't be reached.",
+  "issueId": 386,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/386"
+}
