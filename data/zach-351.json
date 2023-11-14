@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "zach",
+  "risk": "2",
+  "title": "addNodeDelegatorContractToQueue should check nodeDelegatorContracts not duplicated",
+  "issueId": 351,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/351"
+}
