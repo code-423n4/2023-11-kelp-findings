@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "osmanozdemir1",
+  "risk": "2",
+  "title": "Contextual error when checking the balance deposited to EigenLayer may result in an incorrect deposit limit",
+  "issueId": 372,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/372"
+}
