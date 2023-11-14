@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "hals",
+  "risk": "2",
+  "title": "Diluted `rsETH` price if the deposit pool received a direct LST asset transfer",
+  "issueId": 413,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/413"
+}
