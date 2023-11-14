@@ -1,4 +1,4 @@
-QA. It might overwrite an existing key: 
+QA1. It might overwrite an existing key: 
 
 https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L156-L163
 
@@ -42,3 +42,8 @@ QA4. LRTDepositPool.updateMaxNodeDelegatorCount() might decrease  ``maxNodeDeleg
 Mitigation: 
 Check and ensure the new  ``maxNodeDelegatorCount_``  is not small than the number of current nodeDelegators. Otherwise, the function should revert. 
 
+QA5. getAssetPrice() fails to check that assetPriceOracle[asset] == address(0). It is possible that the Oracle for the asset has not been set yet. 
+
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L45-L47](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L45-L47)
+
+Mitigation: check and ensure assetPriceOracle[asset] != address(0).
