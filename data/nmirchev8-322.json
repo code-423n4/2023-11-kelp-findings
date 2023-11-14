@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "nmirchev8",
+  "risk": "2",
+  "title": "LRTOracle is vulnerable to manipulation(inflationary data), because of the `strategy.userUnderlyingView`",
+  "issueId": 322,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/322"
+}
