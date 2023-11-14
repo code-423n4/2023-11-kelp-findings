@@ -2,7 +2,7 @@
 
 https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L109-L122
 
-Protocol does not check whether a strategy has funds in them before changing it. This could present some issues when withdrawing funds
+Protocol does not check whether a strategy has funds in them before changing it. This could present some issues when withdrawing funds.
 
 
 
@@ -12,7 +12,7 @@ In Eigen Layer's deposit function, there is a check to make sure that a certain 
 
 
 
-## L-03 Library is un necessary
+## L-03 Library is not needed
 
 The Library in this function does not add much utility especially when it come to asset management as the constants are fixed and the admin can add new assets without using the library
 
@@ -22,8 +22,7 @@ The Library in this function does not add much utility especially when it come t
 https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L31
 
 
-None of the oracle functions in LRTOracle.sol are pauseable even though the contract inherits pauseable_init. Without it, there could be edge case situations where an outdated oracle is used to fetch incorrect rsETH prices
-
+None of the oracle functions in LRTOracle.sol are pauseable even though the contract inherits pauseable_init. 
 
 ## L-05 Admin can renounce ownership 
 
