@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xrugpull_detector",
+  "risk": "3",
+  "title": "`NodeDelegator.getAssetBalance()` might return inflated balance if different assets are assigned to same strategy.",
+  "issueId": 306,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/306"
+}
