@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xHelium",
+  "risk": "3",
+  "title": "Users can get 0 rsETH token minted to their address when depositing any supported LST into the protocol",
+  "issueId": 337,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/337"
+}
