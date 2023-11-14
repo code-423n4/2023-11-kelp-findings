@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ziyou-",
+  "risk": "2",
+  "title": "The lack of checks results in the possibility of duplicate addition of contract addresses or token addresses.",
+  "issueId": 272,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/272"
+}
