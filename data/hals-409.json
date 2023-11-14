@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "hals",
+  "risk": "2",
+  "title": "`LRTDepositPool.depositAsset` function is missing minimum amount parameter (lacks slippage protection)",
+  "issueId": 409,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/409"
+}
