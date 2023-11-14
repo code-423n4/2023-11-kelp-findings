@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "TeamSS",
+  "risk": "2",
+  "title": "Price feed oracle lacks proper validation which may lead to incorrect calculations during rsETH minting",
+  "issueId": 380,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/380"
+}
