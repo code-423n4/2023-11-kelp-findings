@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ziyou-",
+  "risk": "2",
+  "title": "The updateAssetStrategy function requires a whitelist",
+  "issueId": 268,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/268"
+}
