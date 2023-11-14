@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "7siech",
+  "risk": "3",
+  "title": "Loss of user funds due to miscalculating rsETH price when depositing assets into a non-empty pool",
+  "issueId": 379,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/379"
+}
