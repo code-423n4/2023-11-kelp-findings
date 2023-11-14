@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "KeyKiril",
+  "risk": "2",
+  "title": "`addNodeDelegatorContractToQueue` function is vulnerable to a potential Denial of Service attack",
+  "issueId": 366,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/366"
+}
