@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Bauchibred",
+  "risk": "2",
+  "title": "`depositAsset` could mint wrong amount of rsETH tokens due to current implementation of `getRSETHPrice()`",
+  "issueId": 347,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/347"
+}
