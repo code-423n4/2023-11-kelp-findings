@@ -33,3 +33,52 @@ To mitigate this issue, it is recommended to include a defensive check before th
 // Check if the balance is non-zero before proceeding with the deposit
 require(balance > 0, "Zero balance, nothing to deposit");
 ```
+## B. Duplicate Node Delegator Contract Addresses in `nodeDelegatorQueue`
+[Link](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L162-L176)
+The `addNodeDelegatorContractToQueue` function iterates through an array of Node Delegator contract addresses (`nodeDelegatorContracts`) and adds each address to the `nodeDelegatorQueue` without checking whether the address already exists in the queue. Consequently, the same Node Delegator contract address can be added multiple times, leading to duplicate entries in the queue.
+```solidity
+function addNodeDelegatorContractToQueue(address[] calldata nodeDelegatorContracts) external onlyLRTAdmin {
+    uint256 length = nodeDelegatorContracts.length;
+    if (nodeDelegatorQueue.length + length > maxNodeDelegatorCount) {
+        revert MaximumNodeDelegatorCountReached();
+    }
+
+    for (uint256 i; i < length;) {
+        address newContract = nodeDelegatorContracts[i];
+        UtilLib.checkNonZeroAddress(newContract);
+
+        bool alreadyExists = false;
+        for (uint256 j = 0; j < nodeDelegatorQueue.length; j++) {
+            if (nodeDelegatorQueue[j] == newContract) {
+                alreadyExists = true;
+                break;
+            }
+        }
+
+        if (!alreadyExists) {
+            nodeDelegatorQueue.push(newContract);
+            emit NodeDelegatorAddedinQueue(newContract);
+        } else {
+            revert DuplicateNodeDelegatorContract();
+        }
+
+        unchecked {
+            ++i;
+        }
+    }
+}
+```
+## Impact:
+The impact of this issue is that the nodeDelegatorQueue can contain duplicate entries, potentially leading to incorrect behavior when interacting with Node Delegator contracts and complicating the management of the queue.
+
+## Mitigation:
+Include a check within the function to ensure that a Node Delegator contract address is not already present in the `nodeDelegatorQueue` before adding it. If the address already exists, revert with an appropriate error. Here's an example modification:
+```solidity
+// Inside the loop before adding the contract address to the queue
+if (!alreadyExists) {
+    nodeDelegatorQueue.push(newContract);
+    emit NodeDelegatorAddedinQueue(newContract);
+} else {
+    revert DuplicateNodeDelegatorContract();
+}
+```
