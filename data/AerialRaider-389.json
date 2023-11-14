@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "AerialRaider",
+  "risk": "2",
+  "title": "ensuring each address in the nodeDelegatorContracts array is not the zero address",
+  "issueId": 389,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/389"
+}
