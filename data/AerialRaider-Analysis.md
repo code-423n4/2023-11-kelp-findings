@@ -1,4 +1,4 @@
-To summarize the findings and recommendations:
+Here's a summarized overview of the audit findings, highlighting the areas of improvement and their associated risk levels:
 
 Input Validation in mint() and burnFrom() Functions 
 Risk Level: Medium
@@ -30,6 +30,8 @@ Recommendation: Enhance the getAssetPrice function with error handling to addres
 
 Overall Summary
 The recommendations focus on enhancing security, economic stability, and operational efficiency. They address medium-risk concerns related to oracle reliability, tokenomics, strategy validation, and gas optimization. By implementing these changes, the contract can achieve higher robustness, better align with economic models, and ensure safer and more efficient operations.
+
+
 
 ### Time spent:
 16 hours
