@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "hals",
+  "risk": "2",
+  "title": "`LRTDepositPool.depositAsset` function : no check if the user got shares from his deposit due to a missing check in `getRsETHAmountToMint` function",
+  "issueId": 408,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/408"
+}
