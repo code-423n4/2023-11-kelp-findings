@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "hals",
+  "risk": "2",
+  "title": "`LRTOracle.getAssetPrice` function doesn't check if the returned price is valid",
+  "issueId": 411,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/411"
+}
