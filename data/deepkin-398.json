@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "deepkin",
+  "risk": "2",
+  "title": "AssetStrategy update after contract deploy should be prohibit because of high risk to break RSETH pricing/minting calculation",
+  "issueId": 398,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/398"
+}
