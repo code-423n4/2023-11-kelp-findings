@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "MatricksDeCoder",
+  "risk": "2",
+  "title": "Lack fallback for price feed Oracle leads to errors or zero prices ",
+  "issueId": 326,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/326"
+}
