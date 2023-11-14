@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ustas",
+  "risk": "2",
+  "title": "No checks for stale prices can lead to incorrect asset value calculation during a deposit",
+  "issueId": 373,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/373"
+}
