@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "TermoHash",
+  "risk": "2",
+  "title": "Node delagator can't deposit into strategy if balance of asset exceeds maxPerDeposit of the strategy. ",
+  "issueId": 309,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/309"
+}
