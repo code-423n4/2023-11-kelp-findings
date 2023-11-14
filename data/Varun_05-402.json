@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Varun_05",
+  "risk": "3",
+  "title": "Depositor receives less Rseth due to wrong accounting of RSETHprice",
+  "issueId": 402,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/402"
+}
