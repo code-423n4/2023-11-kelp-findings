@@ -30,10 +30,16 @@ https://github.com/code-423n4/2023-11-kelp/blob/main/src/NodeDelegator.sol#L38-L
 
 ## LRTOracle.sol
 ### Pricing calculation depends on Eigenlayer shares state
+https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTOracle.sol#L52-L79
+```
+@audit getTotalAssetDeposits will use Eigenlayer Strategy contracts underhood
+uint256 totalAssetAmt = ILRTDepositPool(lrtDepositPoolAddr).getTotalAssetDeposits(asset);
+```
 If something bad may happen with Eigenlayer strategy it will have huge impact on the Oracle and Kelp contracts.
 #### Recommendation
 It make sense to add some additional logic to mitigate the such issues(TWAP, price snapshots, etc).
 
 ### No "whenNotPaused" usage but contract is still Pausable
+https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTOracle.sol#L19
 ##### Recommendation 
 Verify is Pausable needed for that contract
