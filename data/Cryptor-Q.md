@@ -41,7 +41,15 @@ Admin should not be able to renounce ownership as it would break several core co
 
 https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L132-L133
 
- The deposit function will fail if it exceeds the assetdeposit limit. The problem is that when calculating the limit it uses the balance of the contract as well as the node delegators
+ The deposit function will fail if it exceeds the assetdeposit limit. It uses the following calculation for the limit 
+
+
+```
+lrtConfig.depositLimitByAsset(asset) - getTotalAssetDeposits(asset)
+```
+
+Which is derived from the function getAssetDistributionData shown below:
+
 
 ```
         // Question: is here the right place to have this? Could it be in LRTConfig?
@@ -60,5 +68,5 @@ https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb06
 
 https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L79
 
-
-That means that an actor can donate just enough of the asset to cause deposits to fail
+The problem is that when calculating the limit it uses the balance of the contract as well as the node delegators.
+That means that a bad actor can donate just enough of the asset to cause deposits to fail
