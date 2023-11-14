@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xHelium",
+  "risk": "3",
+  "title": "Funds sent to eigenLayer strategy will be stuck forever",
+  "issueId": 345,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/345"
+}
