@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "hals",
+  "risk": "2",
+  "title": "`NodeDelegator.depositAssetIntoStrategy` function doesn't check the returned shares amount by the strategy (lacks slippage control)",
+  "issueId": 412,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/412"
+}
