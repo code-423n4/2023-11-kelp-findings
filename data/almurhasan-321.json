@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "almurhasan",
+  "risk": "2",
+  "title": "Assets funds can go/transfer address(0) from LRTDepositPool contract.",
+  "issueId": 321,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/321"
+}
