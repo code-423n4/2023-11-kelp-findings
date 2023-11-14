@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "spark",
+  "risk": "2",
+  "title": "Buner can burn any amount of rsETH from an arbitrary address and Minter can mint arbitrary rsETH to any account",
+  "issueId": 279,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/279"
+}
