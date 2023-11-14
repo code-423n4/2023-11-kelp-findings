@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "nmirchev8",
+  "risk": "2",
+  "title": "Insufficient checks for Chainlink's `latestAnswer()`",
+  "issueId": 340,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/340"
+}
