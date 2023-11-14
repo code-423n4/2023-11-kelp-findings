@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "debo",
+  "risk": "3",
+  "title": "[H-01] Read-Only Reentrancy in the LRTDepositPool contract",
+  "issueId": 308,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/308"
+}
