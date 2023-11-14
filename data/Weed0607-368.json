@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Weed0607",
+  "risk": "2",
+  "title": "Malicious users can make other's call revert by calling first with dust",
+  "issueId": 368,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/368"
+}
