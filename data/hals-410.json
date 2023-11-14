@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "hals",
+  "risk": "3",
+  "title": "`LRTDepositPool.addNodeDelegatorContractToQueue` function doesn't check for duplicates before adding `nodeDelegator` contracts",
+  "issueId": 410,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/410"
+}
