@@ -46,7 +46,7 @@
 ## **Recommendations**
 -  
   1. Consider implementing a backup oracle to serve as an alternative to mitigate the risk of Chainlink failure.
-  2. Due to the limited range of ERC20 tokens supported by EigenLayer, the protocol gets a pass for not performing safe ERC20 operations. But depending on the token types to be integrated, it's safer to use them. Also, approving `type(uint256).max` might not work for some tokens (see NodeDelegator L33). Care should be taken when adding tokens with multiple addresses, etc.
+  2. Due to the limited range of ERC20 tokens supported by EigenLayer, the protocol gets a pass for not performing safe ERC20 operations. But depending on the token types to be integrated, it's safer to use them. Also, approving `type(uint256).max` might not work for some tokens (see NodeDelegator [L45](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L45)). Care should be taken when adding tokens with multiple addresses, etc.
   3. Consider creating a proper documentation through which users and developers can better understand the contracts and functions.
   4. Consider introducing a `multiplier` constant to deal with possible precision loss when performing division operations.
   5. Consider reformatting the functions to better align with the Solidity style guide and introducing NatSpec comments.
@@ -54,6 +54,8 @@
   ***
 ## **Conclusion**
   In general, the protocol seems interesting and we're anticipating what the team has in store next. The architecture is solid, the codebase is well written, and most of the easy-to-overlook safety measures are actually implemented. However, the identified risks need to be mitigated, and provided recommendations should be taken into consideration. Constant upgrades and audits should be invested in to ensure the security of the protocol.
+
+
 
 
 ### Time spent:
