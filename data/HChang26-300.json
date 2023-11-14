@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "HChang26",
+  "risk": "2",
+  "title": "rETH/ETH chainlink oracle has too long of heartbeat and deviation threshold which can cause unfair minting",
+  "issueId": 300,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/300"
+}
