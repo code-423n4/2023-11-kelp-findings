@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "firmanregar",
+  "risk": "2",
+  "title": "Unused return value in Function NodeDelegator.maxApproveToEigenStrategyManager(address)",
+  "issueId": 364,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/364"
+}
