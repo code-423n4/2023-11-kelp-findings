@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Juntao",
+  "risk": "2",
+  "title": "Asset amount staked EigenLayer is not properly calculated",
+  "issueId": 294,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/294"
+}
