@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "AerialRaider",
+  "risk": "2",
+  "title": "Enhancing depositAsset Function by adding checks for zero and deposit limit",
+  "issueId": 388,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/388"
+}
