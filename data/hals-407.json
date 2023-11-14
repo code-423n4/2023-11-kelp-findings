@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "hals",
+  "risk": "2",
+  "title": " `LRTDepositPool` contract: malicious/compromised `nodeDelegator` can't be removed or disabled",
+  "issueId": 407,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/407"
+}
