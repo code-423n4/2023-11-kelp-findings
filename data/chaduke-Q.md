@@ -32,3 +32,10 @@ QA3. There is no machanism to check whether duplicate nodeDelegatorContract is a
 
 Mitigation: 
 Introduce a mapping so that one can check whether we are adding a new nodeDelegatorContract or not to avoid adding duplicate. Otherwise, the limit ``maxNodeDelegatorCount`` might be wasted due to duplicates. 
+
+QA4. LRTDepositPool.updateMaxNodeDelegatorCount() might decrease  ``maxNodeDelegatorCount``, but fails to check that the new ``maxNodeDelegatorCount_`` might result that the number of nodeDelegators already exceeds the new limit. 
+
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L202-L205](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L202-L205)
+
+Mitigation: 
+Check and ensure the new  ``maxNodeDelegatorCount_``  is not small than the number of current nodeDelegators. Otherwise, the function should revert. 
