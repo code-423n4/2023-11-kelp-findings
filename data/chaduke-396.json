@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "chaduke",
+  "risk": "2",
+  "title": "LRTDepositPool.depositAsset() fails to check and ensure rsethAmountMinted  !=0, thus, a user might deposit some token might mint zero RsETH, loss of funds. ",
+  "issueId": 396,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/396"
+}
