@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "alexfilippov314",
+  "risk": "2",
+  "title": "Funds can be lost if the `LRT_DEPOSIT_POOL` contract address is not set in the `LRTConfig`",
+  "issueId": 376,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/376"
+}
