@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "AerialRaider",
+  "risk": "2",
+  "title": "input validation enhancements in the transferAssetToNodeDelegator function to safeguard against potential errors and misuse",
+  "issueId": 392,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/392"
+}
