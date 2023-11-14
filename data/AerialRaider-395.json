@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "AerialRaider",
+  "risk": "2",
+  "title": "added a validation check for the new maximum count of node delegators updateMaxNodeDelegatorCount function ",
+  "issueId": 395,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/395"
+}
