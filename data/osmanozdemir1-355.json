@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "osmanozdemir1",
+  "risk": "2",
+  "title": "Missing check for the min/max price when fetching prices from ChainLink oracle.",
+  "issueId": 355,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/355"
+}
