@@ -35,18 +35,3 @@ Tests were done on ETH mainnet (forked):
 ```
 Mitigation:
 Consider calculating how much asset deposit pool actually received instead of relaying on `depositAmount`
-
-
-
-## Not using SafeERC20 when checking return value of an ERC20 transfer:
-Impact:
-some sections of the code involve direct checks of the return value from ERC20 `transfer` and `transferFrom` functions. This approach does not utilize the SafeERC20 library, which can lead to potential issues with certain ERC20 tokens that do not return a boolean (true) if their transfers were successful:
-
-NodeDelegator : when transferring tokens back to deposit pool using `transferBackToLRTDepositPool`
-https://github.com/code-423n4/2023-11-kelp/blob/main/src/NodeDelegator.sol#L86-L88
-LRTDepositPool : when transferring tokens to a node delegator using `transferAssetToNodeDelegator`
-https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTDepositPool.sol#L194-L196
-LRTDepositPool : when transferring tokens from user to the deposit pool using `depositAsset`
-https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTDepositPool.sol#L136-L138
-
-Some older ERC20 tokens, such as USDT, do not return a boolean value to indicate the success or failure of transfer or transferFrom operations. Consequently, the return value for these tokens will always be false, regardless of the actual outcome of the transfer. While the default assets of the system (e.g., cbETH, stETH, and rETH tokens) do return a true boolean upon successful transfers, reliance on direct return value checks poses compatibility risks with assets that may be integrated into the system in the future.
