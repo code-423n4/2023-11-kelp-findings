@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "alexfilippov314",
+  "risk": "2",
+  "title": "Duplicate values in the `LRTDepositPool.nodeDelegatorQueue can lead to the wrong RSETH price",
+  "issueId": 374,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/374"
+}
