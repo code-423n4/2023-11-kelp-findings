@@ -30,3 +30,36 @@ None of the oracle functions in LRTOracle.sol are pauseable even though the cont
 https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/3d4c0d5741b131c231e558d7a6213392ab3672a5/contracts/access/AccessControlUpgradeable.sol#L186-L190
 
 Admin should not be able to renounce ownership as it would break several core contract functions
+
+
+## L-06 Malicious Actor can make a donation attack to cause deposits to fail
+
+```
+   if (depositAmount > getAssetCurrentLimit(asset)) {
+            revert MaximumDepositLimitReached();
+        }
+```
+
+https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L132-L133
+
+ The deposit function will fail if it exceeds the assetdeposit limit. The problem is that when calculating the limit it uses the balance of the contract as well as the node delegators
+
+```
+        // Question: is here the right place to have this? Could it be in LRTConfig?
+        assetLyingInDepositPool = IERC20(asset).balanceOf(address(this));
+
+
+        uint256 ndcsCount = nodeDelegatorQueue.length;
+        for (uint256 i; i < ndcsCount;) {
+            assetLyingInNDCs += IERC20(asset).balanceOf(nodeDelegatorQueue[i]);
+            assetStakedInEigenLayer += INodeDelegator(nodeDelegatorQueue[i]).getAssetBalance(asset);
+            unchecked {
+                ++i;
+            }
+        }
+```
+
+https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L79
+
+
+That means that an actor can donate just enough of the asset to cause deposits to fail
