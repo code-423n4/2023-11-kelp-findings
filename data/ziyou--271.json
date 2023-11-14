@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ziyou-",
+  "risk": "2",
+  "title": "The addNodeDelegatorContractToQueue function may not execute correctly.",
+  "issueId": 271,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/271"
+}
