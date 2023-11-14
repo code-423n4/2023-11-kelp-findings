@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "debo",
+  "risk": "3",
+  "title": "[H-05] Read-Only Reentrancy in the NodeDelegator contract",
+  "issueId": 323,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/323"
+}
