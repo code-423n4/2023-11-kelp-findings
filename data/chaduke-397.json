@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "chaduke",
+  "risk": "2",
+  "title": "The TotalAssetDeposit value might be minipualted by a deceiving user. ",
+  "issueId": 397,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/397"
+}
