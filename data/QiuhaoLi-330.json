@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "QiuhaoLi",
+  "risk": "2",
+  "title": "depositAsset is vulnerable to front-run/inflation attack",
+  "issueId": 330,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/330"
+}
