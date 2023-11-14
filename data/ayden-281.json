@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ayden",
+  "risk": "3",
+  "title": "Malicious user can cause inflation by directly transferring to the contract, leading to subsequent users losing funds",
+  "issueId": 281,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/281"
+}
