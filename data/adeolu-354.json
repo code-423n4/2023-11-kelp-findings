@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "adeolu",
+  "risk": "2",
+  "title": "getAssetPrice() can sometimes return stale price data.",
+  "issueId": 354,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/354"
+}
