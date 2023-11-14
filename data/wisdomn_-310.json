@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "wisdomn_",
+  "risk": "3",
+  "title": "Users will be unable to deposit assets into the pool If the depsotiLimit is updated to zero, leading to a dos.",
+  "issueId": 310,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/310"
+}
