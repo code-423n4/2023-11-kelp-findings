@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "SAAJ",
+  "risk": "2",
+  "title": "Use contracts-upgradeable instead of contract variants of OpenZeppelin",
+  "issueId": 838,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/838"
+}
