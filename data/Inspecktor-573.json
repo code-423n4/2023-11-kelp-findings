@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Inspecktor",
+  "risk": "2",
+  "title": "Using the deprecated Chainlink function latestAnswer",
+  "issueId": 573,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/573"
+}
