@@ -1,6 +1,6 @@
 **Kelp DAO**
 
-The Kelp DAO is designed to collectively govern and grow the liquid restaking ecosystem. Key components:
+The Kelp DAO is designed to collectively govern and grow the liquid restaking ecosystem.
 
 - The DAO treasury will receive fees and rewards from the protocol.
 
@@ -202,5 +202,7 @@ function withdrawTrappedAssets(address user, address asset) external onlyDAO {
 
 
 
+
+
 ### Time spent:
-8 hours
+19 hours
