@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Stormy",
+  "risk": "3",
+  "title": "Stormy - The system doesn't account the staked balances of previously used asset strategies, as a result the RSETH exchange rate will be calculated based on wrong values and slightly undervalued than it should be.",
+  "issueId": 797,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/797"
+}
