@@ -34,8 +34,6 @@ Without the ability to remove supported assets, the contract may face challenges
 
 **Issue Description:** The blacklisting mechanism in the `CBETH` token introduces potential complications and risks across various stages of the transaction lifecycle, from initial deposits in the LRTDepositPool to activities within the NodeDelegator and Eigen Strategy. If the `LRTDepositPool` or any of the `NodeDelegator` is blacklisted, it implies that the associated tokens will become trapped in these contracts. 
 
-**Recommendation:** 
-
 ## [L-03] Consider use stETH/UDS oracle
 
 **Issue Description: The sponsor has confirmed their choice of Chainlink as an oracle to fetch prices.** Since all other LST price feeds are 18 decimal places, they will most likely use `stETH/ETH` price feeds. However, this feed has a long heartbeat and a 2% deviation threshold, which could lead to fund loss. The 24-hour heartbeat and 2% deviation threshold mean the price can move up to 2% or remain unchanged for 24 hours before triggering a price update. This could result in the on-chain price being significantly different from the true stETH price, leading to incorrectly calculated rsETH to mint.
