@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "jayfromthe13th",
+  "risk": "2",
+  "title": "NodeDelegator:: Ln 59, 122: Potential Loss of Funds Due to Strategy Change Without Prior Withdrawal ",
+  "issueId": 775,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/775"
+}
