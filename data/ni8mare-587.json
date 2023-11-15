@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ni8mare",
+  "risk": "2",
+  "title": "Malicious users can force `depositAssetIntoStrategy` to revert.",
+  "issueId": 587,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/587"
+}
