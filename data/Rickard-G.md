@@ -150,3 +150,15 @@ Manual Analysis
 It is recommended to use the form `x = x + y;` or `x = x-y;` See the example below:
 
 `assetLyingInNDCs = assetLyingInNDCs + IERC20(asset).balanceOf(nodeDelegatorQueue[i]);`
+## [G-06] Use assembly for math (add, sub, mul, div)
+Use assembly for math instead of Solidity. You can check for overflow/underflow in assembly to ensure safety. If using Solidity versions < 0.8.0 and you are using Safemath, you can gain significant gas savings by using assembly to calculate values and checking for overflow/underflow.
+````solidity
+src/LRTDepositPool.sol
+109:        rsethAmountToMint = (amount * lrtOracle.getAssetPrice(asset)) / lrtOracle.getRSETHPrice();
+````
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L109](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L109)
+````solidity
+src/LRTOracle.sol
+78:        return totalETHInPool / rsEthSupply;
+````
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L78](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L78)
