@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Bauchibred",
+  "risk": "2",
+  "title": "Pricing logic of RsETH is heavily flawed for some assets which could lead to minting wrong amount of RsETH",
+  "issueId": 530,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/530"
+}
