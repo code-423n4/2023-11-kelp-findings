@@ -127,7 +127,7 @@ uint256 nodeDelegatorContractsLength = nodeDelegatorContracts.length;
 ```
 
 
-# [QA-05] `updateMaxNodeDelegatorCount()` in `LRTDepositPool.sol` emits an event, even when `maxNodeDelegatorCount` has not been changed.
+# [QA-06] `updateMaxNodeDelegatorCount()` in `LRTDepositPool.sol` emits an event, even when `maxNodeDelegatorCount` has not been changed.
 
 [File: LRTDepositPool.sol](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L202-L205)
 ```
@@ -157,7 +157,42 @@ You can verify how it's done in `LRConfig.sol`. For example here:
     }
 ```
 
+# [QA-07] Whenever updating some state, event should emit both old and new values
 
+Functions which update some values should emit an event which contains not only the new value, but also the old one.
+
+It's a good practice to emit event which informs the end-user not only about the new value, but also the previous (updated) one.
+
+E.g.: 
+
+[File: LRTDepositPool.sol](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L202-L205)
+```
+    function updateMaxNodeDelegatorCount(uint256 maxNodeDelegatorCount_) external onlyLRTAdmin {
+        maxNodeDelegatorCount = maxNodeDelegatorCount_;
+        emit MaxNodeDelegatorCountUpdated(maxNodeDelegatorCount);
+    }
+```
+
+should be changed to:
+
+```
+    function updateMaxNodeDelegatorCount(uint256 maxNodeDelegatorCount_) external onlyLRTAdmin {
+        uint256 oldMaxNodeDelegatorCount = maxNodeDelegatorCount;
+        maxNodeDelegatorCount = maxNodeDelegatorCount_;    
+        emit MaxNodeDelegatorCountUpdated(oldMaxNodeDelegatorCount, maxNodeDelegatorCount);
+    }
+```
+
+
+This issue occurs in multiple of instances:
+
+```
+LRTDepositPool.sol#L204  ->  emit MaxNodeDelegatorCountUpdated(maxNodeDelegatorCount);
+LRTOracle.sol#L98 -> emit AssetPriceOracleUpdate(asset, priceOracle);
+RSETH.sol#L76 -> emit UpdatedLRTConfig(_lrtConfig);
+ChainlinkPriceOracle.sol#L48 -> emit AssetPriceFeedUpdate(asset, priceFeed);
+LRTConfigRoleChecker.sol#L50 -> emit UpdatedLRTConfig(lrtConfigAddr);
+```
 
 # [N-01] Typos/comments-coding-style consistency
 
@@ -208,3 +243,13 @@ Keep your comment-coding-style consistent, by removing dot at the end.
 
 ```
 Typo: `eigen layer` should be changed to `EigenLayer`.
+
+# [N-02] Typo in event name in `LRTDepositPool.sol`
+
+[File: LRTDepositPool.sol](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L171)
+```
+emit NodeDelegatorAddedinQueue(nodeDelegatorContracts[i]);
+```
+
+According to Solidity naming conventions, `NodeDelegatorAddedinQueue()` should be renamed to `NodeDelegatorAddedInQueue()`.
+Moreover, more grammaticaly is: `NodeDelegatorAddedToQueue()`
