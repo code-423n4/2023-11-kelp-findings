@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Aamir",
+  "risk": "3",
+  "title": "LST with different decimals for Chainlink Price Feeds will mint less Amount of `RSETH` to users.",
+  "issueId": 479,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/479"
+}
