@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xkazim",
+  "risk": "2",
+  "title": "important check is missed  for the `getAsset` function which using latestAnswer from chainlink",
+  "issueId": 768,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/768"
+}
