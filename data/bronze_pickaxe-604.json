@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "bronze_pickaxe",
+  "risk": "3",
+  "title": "Funds will be lost because of the usage of `latestAnswer()`",
+  "issueId": 604,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/604"
+}
