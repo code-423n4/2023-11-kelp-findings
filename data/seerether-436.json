@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "Reverting on trying to set the same address again can prevent upgrading contracts and introduces a vulnerability",
+  "issueId": 436,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/436"
+}
