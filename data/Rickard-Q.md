@@ -9,17 +9,5 @@ src/utils/UtilLib.sol
         if (address_ == address(0)) revert ZeroAddressNotAllowed();
     }
 ````
-## [L-02] Use underscore prefix for internal functions
-## Relevant GitHub Links
-
-## Summary
-
-## Vulnerability Details
-````solidity
-
-````
-## Impact
-
-## Tools Used
-
-## Recommendations
+## [L-02] Use underscore prefix for internal function `checkNonZeroAddress`
+For functions such as [checkNonZeroAddress](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/UtilLib.sol#L11), it is more readable to have this function be named `_checkNonZeroAddress` so readers know it is an internal function. A similarly opinionated recommendation is to use `s_` for storage variables and `i_` for immutable variables.
