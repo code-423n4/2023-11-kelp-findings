@@ -16,8 +16,9 @@
 | [NC-01](#n01-missing-events-in-sensitive-functions) | Missing events in sensitive functions |
 | [NC-02](#n02-nodedelegatoraddedinqueue-event-does-not-follow-camalcase) | NodeDelegatorAddedinQueue event does not follow CamalCase |
 | [NC-03](#n03-istrategy-is-not-up-to-date-with-eigenlayeristrategy) | IStrategy is not up to date with EigenLayer::IStrategy |
+| [NC-04](#n04-istrategy-is-not-up-to-date-with-eigenlayeristrategy) | No withdraw functionality |
 
-| Total Non-Critical Issues | 3 |
+| Total Non-Critical Issues | 4 |
 | --- | --- |
 
 ## Low Risks
@@ -133,3 +134,9 @@ transferBackToLRTDepositPool() →
 **Recommendation:** Consider using the latest version from the EigenLayer repository: 
 
 https://github.com/Layr-Labs/eigenlayer-contracts/blob/master/src/contracts/interfaces/IStrategy.sol
+
+## **[N‑04]** No withdraw functionality
+
+**Issue Description:** There is no withdraw functionality in the protocol all funds will be locked
+
+**Recommendation:** Consider implement withdraw function
