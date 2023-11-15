@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "turvy_fuzz",
+  "risk": "2",
+  "title": "deposit Asset is vulnerable to sandwich attack",
+  "issueId": 550,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/550"
+}
