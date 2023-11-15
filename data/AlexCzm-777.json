@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "AlexCzm",
+  "risk": "3",
+  "title": "The deposited amount is included in how rsEthAmountToMint is calculated and it should not. Second depositors get less rsETH shares than deserved.",
+  "issueId": 777,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/777"
+}
