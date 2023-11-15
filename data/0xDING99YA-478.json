@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xDING99YA",
+  "risk": "2",
+  "title": "Unnecessary precision loss when minting rsETH",
+  "issueId": 478,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/478"
+}
