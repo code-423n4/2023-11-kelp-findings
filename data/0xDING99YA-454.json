@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xDING99YA",
+  "risk": "2",
+  "title": "getAssetBalance() in NodeDelegator.sol may return inaccurate value, thus the rsETH price based on that may also be incorrect.",
+  "issueId": 454,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/454"
+}
