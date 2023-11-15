@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ge6a",
+  "risk": "2",
+  "title": "Missing oracle price feed validation and usage of a deprecated method ",
+  "issueId": 748,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/748"
+}
