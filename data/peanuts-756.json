@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "peanuts",
+  "risk": "2",
+  "title": "Users can escape the burnFrom function by transferring rsETH to another account or selling it on the open market",
+  "issueId": 756,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/756"
+}
