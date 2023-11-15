@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "D1r3Wolf",
+  "risk": "3",
+  "title": "Missing returns for ERC20 contracts",
+  "issueId": 445,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/445"
+}
