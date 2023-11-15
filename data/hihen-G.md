@@ -20,13 +20,13 @@ If needed, the values can be read from the verified contract source code, or if 
 
 There are 8 instances:
 
-- *RSETH.sol* ( [21](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/RSETH.sol#L21) ):
+- *RSETH.sol* ( [21](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/RSETH.sol#L21) ):
 
 ```solidity
 21:     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 ```
 
-- *LRTConstants.sol* ( [7](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConstants.sol#L7), [9](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConstants.sol#L9), [11](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConstants.sol#L11), [14](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConstants.sol#L14), [15](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConstants.sol#L15), [16](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConstants.sol#L16), [19](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConstants.sol#L19) ):
+- *LRTConstants.sol* ( [7](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L7), [9](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L9), [11](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L11), [14](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L14), [15](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L15), [16](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L16), [19](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L19) ):
 
 ```solidity
 7:     bytes32 public constant R_ETH_TOKEN = keccak256("R_ETH_TOKEN");
@@ -50,7 +50,7 @@ It's cheaper to access the state variable directly if it is accessed only once. 
 
 There is 1 instance:
 
-- *LRTDepositPool.sol* ( [193](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTDepositPool.sol#L193) ):
+- *LRTDepositPool.sol* ( [193](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L193) ):
 
 ```solidity
 193:         address nodeDelegator = nodeDelegatorQueue[ndcIndex];
@@ -63,7 +63,7 @@ Payable functions cost less gas to execute, because the compiler does not have t
 <details>
 <summary>There are 6 instances (click to show):</summary>
 
-- *LRTConfig.sol* ( [41-50](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTConfig.sol#L41-L50) ):
+- *LRTConfig.sol* ( [41-50](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L41-L50) ):
 
 ```solidity
 41:     function initialize(
@@ -78,31 +78,31 @@ Payable functions cost less gas to execute, because the compiler does not have t
 50:     {
 ```
 
-- *LRTDepositPool.sol* ( [31](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTDepositPool.sol#L31) ):
+- *LRTDepositPool.sol* ( [31](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L31) ):
 
 ```solidity
 31:     function initialize(address lrtConfigAddr) external initializer {
 ```
 
-- *LRTOracle.sol* ( [29](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTOracle.sol#L29) ):
+- *LRTOracle.sol* ( [29](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L29) ):
 
 ```solidity
 29:     function initialize(address lrtConfigAddr) external initializer {
 ```
 
-- *NodeDelegator.sol* ( [26](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/NodeDelegator.sol#L26) ):
+- *NodeDelegator.sol* ( [26](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L26) ):
 
 ```solidity
 26:     function initialize(address lrtConfigAddr) external initializer {
 ```
 
-- *RSETH.sol* ( [32](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/RSETH.sol#L32) ):
+- *RSETH.sol* ( [32](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/RSETH.sol#L32) ):
 
 ```solidity
 32:     function initialize(address admin, address lrtConfigAddr) external initializer {
 ```
 
-- *ChainlinkPriceOracle.sol* ( [27](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/oracles/ChainlinkPriceOracle.sol#L27) ):
+- *ChainlinkPriceOracle.sol* ( [27](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/oracles/ChainlinkPriceOracle.sol#L27) ):
 
 ```solidity
 27:     function initialize(address lrtConfig_) external initializer {
@@ -116,19 +116,19 @@ Using assembly to check for zero can save gas by allowing more direct access to 
 
 There are 3 instances:
 
-- *LRTDepositPool.sol* ( [129](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTDepositPool.sol#L129) ):
+- *LRTDepositPool.sol* ( [129](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L129) ):
 
 ```solidity
 129:         if (depositAmount == 0) {
 ```
 
-- *LRTOracle.sol* ( [56](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTOracle.sol#L56) ):
+- *LRTOracle.sol* ( [56](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L56) ):
 
 ```solidity
 56:         if (rsEthSupply == 0) {
 ```
 
-- *UtilLib.sol* ( [12](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/UtilLib.sol#L12) ):
+- *UtilLib.sol* ( [12](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/UtilLib.sol#L12) ):
 
 ```solidity
 12:         if (address_ == address(0)) revert ZeroAddressNotAllowed();
@@ -141,55 +141,55 @@ The solidity language continues to pursue more efficient gas optimization scheme
 <details>
 <summary>There are 9 instances (click to show):</summary>
 
-- *LRTConfig.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTConfig.sol#L2) ):
+- *LRTConfig.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
 ```
 
-- *LRTDepositPool.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTDepositPool.sol#L2) ):
+- *LRTDepositPool.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
 ```
 
-- *LRTOracle.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/LRTOracle.sol#L2) ):
+- *LRTOracle.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
 ```
 
-- *NodeDelegator.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/NodeDelegator.sol#L2) ):
+- *NodeDelegator.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
 ```
 
-- *RSETH.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/RSETH.sol#L2) ):
+- *RSETH.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/RSETH.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
 ```
 
-- *ChainlinkPriceOracle.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/oracles/ChainlinkPriceOracle.sol#L2) ):
+- *ChainlinkPriceOracle.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/oracles/ChainlinkPriceOracle.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
 ```
 
-- *LRTConfigRoleChecker.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConfigRoleChecker.sol#L2) ):
+- *LRTConfigRoleChecker.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConfigRoleChecker.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
 ```
 
-- *LRTConstants.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/LRTConstants.sol#L2) ):
+- *LRTConstants.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
 ```
 
-- *UtilLib.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/0f4f79fe8a58222320a2b7b4d0fdc5663a333b0e/src/utils/UtilLib.sol#L2) ):
+- *UtilLib.sol* ( [2](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/UtilLib.sol#L2) ):
 
 ```solidity
 2: pragma solidity 0.8.21;
