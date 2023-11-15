@@ -86,6 +86,15 @@ shifts to be deployed on L2s like arbitrum too , if that's the case , then since
 All the questions and TODOs should be resolved before deployment , there exists a question here https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTDepositPool.sol#L78 which should be resolved/removed
 before deployment.
 
+## No Need For unchecked Loop Increments
+
+### Description:
+
+The new solidity version i.e. 0.8.22 solidity introduced a remarkable feature that automatically handles overflow checks for loop counters, therefore it would no longer require to have unchecked loop counters which are
+proven to be risky.
+
+Bump up the solidity version to 0.8.22
+
 ## Sanity check When addNodeDelegatorContractToQueue
 
 ### Description:
