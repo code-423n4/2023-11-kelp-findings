@@ -9,3 +9,17 @@ src/utils/UtilLib.sol
         if (address_ == address(0)) revert ZeroAddressNotAllowed();
     }
 ````
+## [L-02] Use underscore prefix for internal functions
+## Relevant GitHub Links
+
+## Summary
+
+## Vulnerability Details
+````solidity
+
+````
+## Impact
+
+## Tools Used
+
+## Recommendations
