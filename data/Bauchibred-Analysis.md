@@ -36,11 +36,12 @@ Once the contest began, the first few hours was dedicated to examining the smart
 - **SLOC**: 25
 
 > This is a simple but interesting contract, so below attached is a graphic representation.
-> ![](https://user-images.githubusercontent.com/107410002/282992868-449d3698-4b15-42cb-abd0-2d9b4e52a3b3.png)
+
+![](https://user-images.githubusercontent.com/107410002/282992868-449d3698-4b15-42cb-abd0-2d9b4e52a3b3.png)
 
 ### [LRTConfigRoleChecker](https://github.com/code-423n4/2023-11-kelp/blob/main/src/utils/LRTConfigRoleChecker.sol)
 
-- **Purpose**: This contract plays a key role of implementing diligent checks and manages the roles assigned to different participants in the Kelp protocol, ensuring that functions are accessed by the right entitie.
+- **Purpose**: This contract plays a key role of implementing diligent checks and manages the roles assigned to different participants in the Kelp protocol, ensuring that functions are accessed by the right entities.
 - **SLOC**: 33
 
 ### [RSETH](https://github.com/code-423n4/2023-11-kelp/blob/main/src/RSETH.sol)
@@ -53,7 +54,8 @@ Once the contest began, the first few hours was dedicated to examining the smart
 - **Purpose**: As an oracle contract, LRTOracle is crucial for fetching real-time price data of supported LSTs (Liquid Staking Tokens).
 - **SLOC**: 60
   > This contract plays a very important role too, below attached is a graphic representation of the contract.
-  > ![](https://user-images.githubusercontent.com/107410002/282994040-82f06680-f6c0-4892-b4d1-257c6b90ce58.png)
+
+![](https://user-images.githubusercontent.com/107410002/282994040-82f06680-f6c0-4892-b4d1-257c6b90ce58.png)
 
 ### [NodeDelegator](https://github.com/code-423n4/2023-11-kelp/blob/main/src/NodeDelegator.sol)
 
@@ -76,7 +78,7 @@ Once the contest began, the first few hours was dedicated to examining the smart
 
 ### Important Links
 
-Check out the protocol's [Linktree](https://linktr.ee/kelpdao)
+Check out the protocol's [Linktree.](https://linktr.ee/kelpdao)
 
 ## Testability
 
@@ -88,11 +90,13 @@ The system's testability is commendable being that is has a wide coverage, one t
 - Protocol does not take into account that prices returned from chainlink could be stale which could lead to the ingestion of wrong prices and potentially over/undervaluing the assets that's in the pool or the amount of rsETH to mint.
 - Adding a non active asset, or providing the wrong oracle for an asset would lead to a massive over/under valuing of assets while minting.
 - Additionally, generic pausing/unpausing responsibility of admins, could endanger protocol.
-- Protocol insome cases currently uses the non-optimal oracle for assets, which also could lead to cases where assets are under/over valued, this is pertaining stETH whose USD feed is considered way safe than it's ETH counterpart.
+- Protocol in some cases currently uses the non-optimal oracle for assets, which also could lead to cases where assets are under/over valued, this is pertaining stETH whose USD feed is considered way safe than it's ETH counterpart.
 
 ## Summary of Reported Findings
 
 During my security review, I identified several issues impacting the smart contract functionalities, each presenting unique challenges and potential risks to the system's overall integrity and compliance with multiple issues pertaining external protocol integration with KELP, particularly in price querying, which can disrupt staking and depositing, this is in relation to the current _Chainlink_ integration.
+
+An attacker can grief honest users by front-running their deposit transactions in `LRTDepositPool.depositAsset()` with a minuscule deposit amount (as small as one wei), this eventually leads to user frustration and even protocol's inability to have an assurance that a  supported asset's limit would ever be reached.
 
 Transfers in LRTDepositPool may fail with non-standard EIP20 tokens that revert instead of returning false on failure.
 
@@ -155,7 +159,7 @@ Current implementation subtly suggests that event tracking isn't maximized. Inst
 
 ## Security Researcher Logistics
 
-My attempt on reviewing the Codebase spanned around 25 hours distributed over 3 days:
+My attempt on reviewing the Codebase spanned around 25 hours distributed over 3/4 days:
 
 - 1 hour dedicated to writing this analysis.
 - 3 hours researching on implementations novel to me (i.e LSTs), being that this is my first Code4rena contest that has them at the core of the protocol.
@@ -165,6 +169,8 @@ My attempt on reviewing the Codebase spanned around 25 hours distributed over 3 
 ## Conclusion
 
 The codebase was a very great learning experience, though it was a pretty hard nut to crack, being that it's like my first contest that deals with LSTs, additionally it has a little amount of nSLOC which as usual _the lesser the lines of code the lesser the bug ideas_ , nonetheless it was a great ride seeing the unique implementations employed in the codebase.
+
+
 
 
 ### Time spent:
