@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "spark",
+  "risk": "2",
+  "title": "`maxNodeDelegatorCount` can be updated to lower value comparing with the current queue",
+  "issueId": 786,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/786"
+}
