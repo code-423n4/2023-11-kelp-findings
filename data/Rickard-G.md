@@ -118,3 +118,11 @@ src/LRTConfig.sol
 17:    mapping(address token => address strategy) public override assetStrategy;
 ````
 [https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L15-L17](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L15-L17)
+## [G-04] Internal functions that are not called by the contract should be removed to save deployment gas
+Internal functions in Solidity are only intended to be invoked within the contract or by other internal functions. If an internal function is not called anywhere within the contract, it serves no purpose and contributes unnecessary overhead during deployment. Removing such functions can lead to substantial gas savings.
+````solidity
+11:    function checkNonZeroAddress(address address_) internal pure {
+12:        if (address_ == address(0)) revert ZeroAddressNotAllowed();
+13:    }
+````
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/UtilLib.sol#L11-L13](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/UtilLib.sol#L11-L13)
