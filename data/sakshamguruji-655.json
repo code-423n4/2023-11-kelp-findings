@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "sakshamguruji",
+  "risk": "2",
+  "title": "transferAssetToNodeDelegator Should Have whenNotPaused Modifier",
+  "issueId": 655,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/655"
+}
