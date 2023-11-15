@@ -70,3 +70,12 @@ https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb06
 
 The problem is that when calculating the limit it uses the balance of the contract as well as the node delegators.
 That means that a bad actor can donate just enough of the asset to cause deposits to fail
+
+
+
+## L-08 Deposit function is vulnerable to front running 
+
+https://github.com/Layr-Labs/eigenlayer-contracts/blob/75e59432d079c6f90d48d4e950a68c15867c82b2/src/contracts/strategies/StrategyBaseTVLLimits.sol#L80-L81
+
+Eigen Layer strategy contracts has a deposit limit, meaning that a bad actor can front run and cause Kelp's deposit function to revert 
+
