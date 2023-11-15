@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "joaovwfreire",
+  "risk": "2",
+  "title": " LRTOracle and ChainlinkPriceOracle contracts getAssetPrice function do not take stale prices into account",
+  "issueId": 529,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/529"
+}
