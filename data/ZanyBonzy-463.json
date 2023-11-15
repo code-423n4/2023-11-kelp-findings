@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ZanyBonzy",
+  "risk": "2",
+  "title": "Chainlink returned prices are not validated",
+  "issueId": 463,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/463"
+}
