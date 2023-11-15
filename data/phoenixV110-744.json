@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "phoenixV110",
+  "risk": "2",
+  "title": "While depositing assets in the LRTDepositPool, method getAssetPrice() can revert unexpectedly if price feed for the asset is not present in assetPriceFeed array",
+  "issueId": 744,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/744"
+}
