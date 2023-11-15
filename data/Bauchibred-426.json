@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Bauchibred",
+  "risk": "3",
+  "title": " `rsETHToMint() `is not optimally calculated which could lead to new depositors having an unfairly way better exchange rate than older users",
+  "issueId": 426,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/426"
+}
