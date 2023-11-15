@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "spark",
+  "risk": "3",
+  "title": "Potential Dangerous When Updating the `rsETH` and `LRTConfig`",
+  "issueId": 763,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/763"
+}
