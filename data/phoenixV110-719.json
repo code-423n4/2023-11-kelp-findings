@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "phoenixV110",
+  "risk": "3",
+  "title": "Deprecated method latestAnswer() is used in ChainlinkPriceOracle contract",
+  "issueId": 719,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/719"
+}
