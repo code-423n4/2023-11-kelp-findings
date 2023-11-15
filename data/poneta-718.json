@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "poneta",
+  "risk": "2",
+  "title": "Manager could add malicious token to the supported asset array. (Centralization Risk)",
+  "issueId": 718,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/718"
+}
