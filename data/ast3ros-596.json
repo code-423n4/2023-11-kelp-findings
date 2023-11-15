@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ast3ros",
+  "risk": "3",
+  "title": "Inaccurate calculation of total assets deposited in Eigen Layer",
+  "issueId": 596,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/596"
+}
