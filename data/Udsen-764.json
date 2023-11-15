@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Udsen",
+  "risk": "2",
+  "title": "`rsEth` TOKEN, MINT AMOUNT CALCULATION, IS BROKEN DUE TO FEE-ON-TRANSFER TOKEN DEPOSITS HAPPEN VIA `LRTDepositPool.depositAsset` FUNCTION",
+  "issueId": 764,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/764"
+}
