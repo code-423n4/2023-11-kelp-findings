@@ -106,3 +106,19 @@ function getAssetBalance(address asset) external view override returns (uint256)
 ```
  - ```getAssetBalance()``` calls [userUnderlyingView](https://github.com/Layr-Labs/eigenlayer-contracts/blob/master/src/contracts/strategies/StrategyBase.sol#L245-L251) on the EigenLayer protocol, 
  - which in turn calls  [sharesToUnderlyingView](https://github.com/Layr-Labs/eigenlayer-contracts/blob/master/src/contracts/strategies/StrategyBase.sol#L200-L206) which converts the number of shares to the equivalent amount of underlying tokens for the selected strategy meaning. Meaning that this will return already deposited tokens + accrued rewards.
+
+# [L-02] NatSpec mismatch
+[LRTDepositPool.sol#L159-L162](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L159-L162)
+```
+    /// @notice add new node delegator contract addresses
+    /// @dev only callable by LRT manager
+    /// @param nodeDelegatorContracts Array of NodeDelegator contract addresses
+    function addNodeDelegatorContractToQueue(address[] calldata nodeDelegatorContracts) external onlyLRTAdmin {
+```
+NatSpec: "only callable by LRT manager"
+modifier: `onlyLRTAdmin` (not onlyLRTManager, or vice versa for docs)
+
+# [L-03] Some funds may be deposited later than they could be
+Because deposits are 3-steps (user -> DepositPool, DepositPool -> NodeDelegator, NodeDelegator -> EigenLayer), it is possible that some user deposits into Kelp may happen right before the Manager deposits funds from NodeDelegator into EigenLayer. 
+
+Consider using depositing from DepositPool into EigenLayer via transferFrom. This would only require setting infinite approval from DepositPool to NodeDelegator, and changing NodeDelegator#depositAssetIntoStrategy to transferFrom(depositPool, strategy, amount).
