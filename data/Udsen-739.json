@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Udsen",
+  "risk": "2",
+  "title": "ERRORNEOUS ACCESS CONTROL IMPLEMENTED IN THE `LRTDepositPool.addNodeDelegatorContractToQueue` FUNCTION",
+  "issueId": 739,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/739"
+}
