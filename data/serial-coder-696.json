@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "serial-coder",
+  "risk": "2",
+  "title": "Incorrect minting of rsETH tokens if LST asset price drops below Chainlink's minimum price",
+  "issueId": 696,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/696"
+}
