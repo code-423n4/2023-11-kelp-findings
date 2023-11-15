@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "twcctop",
+  "risk": "2",
+  "title": "Lack of withdraw function in `LRTDepositPool`.",
+  "issueId": 553,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/553"
+}
