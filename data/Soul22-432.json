@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Soul22",
+  "risk": "3",
+  "title": "Protocol assumes that all future collateral and prices will have 18 decimals",
+  "issueId": 432,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/432"
+}
