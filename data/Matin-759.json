@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Matin",
+  "risk": "2",
+  "title": "More RsETH token can be minted by manipulating the ETH/RsETH price ratio in the Oracle contract",
+  "issueId": 759,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/759"
+}
