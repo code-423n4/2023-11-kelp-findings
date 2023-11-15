@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Pechenite",
+  "risk": "2",
+  "title": "After changing the strategy of particular asset, `users deposits` will become permanently lost/locked in the `Strategy`. Additionally `getAssetDistributionData()` gets the latest strategy that has the asset balance deposited",
+  "issueId": 644,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/644"
+}
