@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "almurhasan",
+  "risk": "2",
+  "title": "There is a missing check in the function setToken/function setContract.",
+  "issueId": 472,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/472"
+}
