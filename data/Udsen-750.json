@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Udsen",
+  "risk": "3",
+  "title": "A MALICIOUS WHALE CAN `DoS` THE ASSET DEPOSIT FUNCTIONALITY OF THE `LRTDepositPool` CONTRACT BY DIRECLTY TRANSFERRING A LARGE AMOUNT OF RESPECTIVE TOKENS TO THE PROTOCOL",
+  "issueId": 750,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/750"
+}
