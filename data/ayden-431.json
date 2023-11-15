@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ayden",
+  "risk": "2",
+  "title": "When adding the NodeDelegator contract, there is no validation to check whether it is already in the list",
+  "issueId": 431,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/431"
+}
