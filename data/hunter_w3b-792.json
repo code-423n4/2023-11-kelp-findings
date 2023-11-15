@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "hunter_w3b",
+  "risk": "2",
+  "title": "Rate calculation assumes 1:1 price ratio between asset and RSETH but pricing models may differ",
+  "issueId": 792,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/792"
+}
