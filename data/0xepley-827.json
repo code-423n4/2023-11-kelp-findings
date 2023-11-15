@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xepley",
+  "risk": "3",
+  "title": "Staleness Vulnerability in chainlinkAdaptor's `getAssetPrice` function",
+  "issueId": 827,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/827"
+}
