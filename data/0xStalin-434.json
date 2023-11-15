@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xStalin",
+  "risk": "3",
+  "title": "The deposit logic doesn't keep track of what type of LST asset each depositor has deposited in the DepositPool, it won't be possible to ensure to depositors they can get the same LST assets that they deposited.",
+  "issueId": 434,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/434"
+}
