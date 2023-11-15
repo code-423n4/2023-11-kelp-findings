@@ -2,7 +2,7 @@
 *Gas findings in this report has been thoroughly tested to hold no inherent risk (security or otherwise) to the operations of the protocol but we strongly advise the Kelp DAO team to properly test before applying the recommended fix.*
 
 ## [G-0] Use modifier instead of a function for zero address checks. 
-In multiple instances of the Kelp DAO codebase, `UtilLib::checkNonZeroAddress` is used to check for the presence of _zero address_ in addresses passed as arguments to core protocol functions. The problem with this approach is that it consumes more gas vs a modifier version. Although, it is worth noting that modifiers can't be defined in Libraries. For this, we suggest the usage of a helper/wrapper contract to contain the modifier zero address logic. It is true that modifiers 
+In multiple instances of the Kelp DAO codebase, `UtilLib::checkNonZeroAddress` is used to check for the presence of _zero address_ in addresses passed as arguments to core protocol functions. The problem with this approach is that it consumes more gas vs a modifier version. Although, it is worth noting that modifiers can't be defined in Libraries. For this, we suggest the usage of a helper/wrapper contract to contain the zero address modifier logic. It is true that modifiers 
 
 [Reference](https://github.com/code-423n4/2022-01-elasticswap-findings/issues/77)
 
