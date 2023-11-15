@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "zhaojie",
+  "risk": "2",
+  "title": "The depositLimit is set without checking whether the depositLimit will exceed the total amount",
+  "issueId": 447,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/447"
+}
