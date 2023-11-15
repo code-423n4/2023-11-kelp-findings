@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "adriro",
+  "risk": "2",
+  "title": "DepositPool is susceptible to the inflation attack",
+  "issueId": 819,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/819"
+}
