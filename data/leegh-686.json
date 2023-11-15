@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "leegh",
+  "risk": "2",
+  "title": "One node delegator may be pushed to ```nodeDelegatorQueue``` array multiple times, resulting in wrong asset distribution from ```getAssetDistributionData```.",
+  "issueId": 686,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/686"
+}
