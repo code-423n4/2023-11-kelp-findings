@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "phoenixV110",
+  "risk": "3",
+  "title": "The method getRSETHPrice() in LRTOracle can overflow unexpectedly due to unsafe multiplication",
+  "issueId": 742,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/742"
+}
