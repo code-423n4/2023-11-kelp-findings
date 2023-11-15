@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "jayfromthe13th",
+  "risk": "2",
+  "title": "LRTOracle.sol:: getRSETHPrice: (Denial of Service (DoS) Risk in getRSETHPrice Function Due to Unbounded Loop",
+  "issueId": 703,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/703"
+}
