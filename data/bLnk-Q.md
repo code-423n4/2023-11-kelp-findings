@@ -1,4 +1,4 @@
-# Storage Variable used in Abstract Contract
+# [L-01] Storage Variable used in Abstract Contract
 ## Summary
 Contract RSETH is upgradeable and it is inheriting from LRTConfigRoleChecker and if in the future an additional variable is to be added it can create an issue because there is no storage gap or namespaced storage.
 
@@ -31,3 +31,20 @@ Use structs for storage variables with a variable for storage location for it. k
 https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/master/contracts/token/ERC20/ERC20Upgradeable.sol
 
 Alternatively an array can be added in LRTConfigRoleChecker to create a storageslot gap.
+
+
+
+# [L-02] Potential out of gas DoS if there are too many assets
+## Summary
+LRTOracle::getRSETHPrice() has a for loop that calls a different function which itself has a for loop.
+
+## Details
+LRTOracle::getRSETHPrice() has a for loop inside for each supported asset and in that loop LRTDepositPool::getTotalAssetDeposits() calls a method with another for loop inside of it: LRTDepositPool::getAssetDistributionData() for each element in the nodeDelegatorQueue. As the side of the supported assets grow so does the gas cost and if too many assets are added this will eventually require too much gas causing an out of gas error.
+
+
+## Impact
+Potential DoS if too many assets are added
+
+
+## Recommendation
+Keep the amount of supported assets to a minimum to avoid this issue
