@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "twcctop",
+  "risk": "2",
+  "title": "`getRSETHPrice` is possible to overrate the rsEth value of current.",
+  "issueId": 607,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/607"
+}
