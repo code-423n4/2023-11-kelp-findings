@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xDING99YA",
+  "risk": "3",
+  "title": "Attackers can manipulate the price of rsETH by donating LST tokens to steal other depositor's funds",
+  "issueId": 451,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/451"
+}
