@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Yanchuan",
+  "risk": "2",
+  "title": "Duplicate NodeDelegators will result in users being unable to deposit assets.",
+  "issueId": 579,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/579"
+}
