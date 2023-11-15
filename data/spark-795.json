@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "spark",
+  "risk": "2",
+  "title": "Missing Validation on duplicate `nodeDelegatorContracts`",
+  "issueId": 795,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/795"
+}
