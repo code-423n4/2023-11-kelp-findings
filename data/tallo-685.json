@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "tallo",
+  "risk": "2",
+  "title": "```LRTConfig``` has no ability to remove an asset making it especially vulnerable if an underlying asset has security issues",
+  "issueId": 685,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/685"
+}
