@@ -1,7 +1,8 @@
 ## 1): Wrong event emittion
 In the function `depositAssetIntoStrategy` of `NodeDelegator` the event
-solidity
+```solidity
 emit AssetDepositIntoStrategy(asset, strategy, balance);
+```
 
 is being emitted but the location of this event emission is wrong, the event is emitted before the tokens are being deposited into the `strategy` so make sure to correct it and emit the event after the assets are being deposited into the `strategy`
 
