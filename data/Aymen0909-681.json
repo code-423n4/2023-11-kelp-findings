@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Aymen0909",
+  "risk": "2",
+  "title": "Risk of slippage when depositor calls `depositAsset`",
+  "issueId": 681,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/681"
+}
