@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "deth",
+  "risk": "2",
+  "title": "LRTDepositPool.sol#getRsETHAmountToMint - Usage of rETH/ETH oracle can lead to incorrect amount of rsETH minted due to the oracles large deviation and heartbeat",
+  "issueId": 516,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/516"
+}
