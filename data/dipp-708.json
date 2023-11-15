@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "dipp",
+  "risk": "2",
+  "title": "Duplicates in `nodeDelegatorQueue` causes functions to return incorrect values leading to incorrect functionality",
+  "issueId": 708,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/708"
+}
