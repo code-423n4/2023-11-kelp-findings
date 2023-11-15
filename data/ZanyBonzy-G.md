@@ -81,3 +81,31 @@ LRTOracle.sol [L71](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051
             assetStakedInEigenLayer += INodeDelegator(nodeDelegatorQueue[i]).
 ```
 LRTDepositPool.sol [83-84](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L82C42-L84C101)
+
+### 5. Expressions for constant values such as a call to keccak256(), should use immutable rather than constant
+See [this](https://github.com/ethereum/solidity/issues/9232) issue for a detail description of the issue
+
+```
+    bytes32 public constant R_ETH_TOKEN = keccak256("R_ETH_TOKEN");
+    //stETH token
+    bytes32 public constant ST_ETH_TOKEN = keccak256("ST_ETH_TOKEN");
+    //cbETH token
+    bytes32 public constant CB_ETH_TOKEN = keccak256("CB_ETH_TOKEN");
+
+    //contracts
+    bytes32 public constant LRT_ORACLE = keccak256("LRT_ORACLE");
+    bytes32 public constant LRT_DEPOSIT_POOL = keccak256("LRT_DEPOSIT_POOL");
+    bytes32 public constant EIGEN_STRATEGY_MANAGER = keccak256("EIGEN_STRATEGY_MANAGER");
+
+    //Roles
+    bytes32 public constant MANAGER = keccak256("MANAGER");
+
+```
+[LRTConstants.sol](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/LRTConstants.sol#L7C1-L20C2)
+
+
+```
+    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+    bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
+```
+RSETH.sol [L21-22](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/RSETH.sol#L21C1-L22C68)
