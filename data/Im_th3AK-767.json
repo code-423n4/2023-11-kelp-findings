@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Im_th3AK",
+  "risk": "2",
+  "title": "Unused Return :: ignores the return value of an external call to the function",
+  "issueId": 767,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/767"
+}
