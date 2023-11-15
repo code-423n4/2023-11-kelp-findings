@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "SUPERMAN_I4G",
+  "risk": "2",
+  "title": "NodeDelegator: Some tokens must approve 0 first",
+  "issueId": 515,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/515"
+}
