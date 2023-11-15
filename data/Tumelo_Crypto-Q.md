@@ -1,4 +1,4 @@
-# DepositLimit can be exceeded due to stETH being a rebase token
+# [L-01] DepositLimit can be exceeded due to stETH being a rebase token
 
 ## Impact
 Although low risk as deposit limit is said to be 100 000 Eth, this will cause problems when interacting with Eigenlayer contracts as they share similar deposit limit.
