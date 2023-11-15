@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xblackskull",
+  "risk": "2",
+  "title": "Supported asset cannot be removed or cleared in LRTConfig",
+  "issueId": 541,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/541"
+}
