@@ -26,5 +26,69 @@ FILE: 2023-11-kelp/src/LRTConfig.sol
 ```
 https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L13-L14
 
+##
+
+## [G-2] Don't cache state variables or function calls only used once 
+
+```diff
+FILE: Breadcrumbs2023-11-kelp/src/LRTDepositPool.sol
+
+function _mintRsETH(address _asset, uint256 _amount) private returns (uint256 rsethAmountToMint) {
+        (rsethAmountToMint) = getRsETHAmountToMint(_asset, _amount);
+
+-        address rsethToken = lrtConfig.rsETH();
+        // mint rseth for user
+-        IRSETH(rsethToken).mint(msg.sender, rsethAmountToMint);
++        IRSETH(lrtConfig.rsETH()).mint(msg.sender, rsethAmountToMint);
+    }
+
+
+
+- 193: address nodeDelegator = nodeDelegatorQueue[ndcIndex];
+-        if (!IERC20(asset).transfer(nodeDelegator, amount)) {
++        if (!IERC20(asset).transfer(nodeDelegatorQueue[ndcIndex], amount)) {
+            revert TokenTransferFailed();
+        }
+
+```
+https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L154
+
+##
+
+## [G-3] Don't declare variables inside the loop
+
+Declare outside the loop and only use inside
+
+```diff
+FILE: Breadcrumbs2023-11-kelp/src/LRTOracle.sol
+
+ddress[] memory supportedAssets = lrtConfig.getSupportedAssetList();
+        uint256 supportedAssetCount = supportedAssets.length;
++    address asset;
++    uint256 assetER;
++ uint256 totalAssetAmt;
+        for (uint16 asset_idx; asset_idx < supportedAssetCount;) {
+-            address asset = supportedAssets[asset_idx];
++             asset = supportedAssets[asset_idx];
+-            uint256 assetER = getAssetPrice(asset);
++            assetER = getAssetPrice(asset);
+
+-            uint256 totalAssetAmt = ILRTDepositPool(lrtDepositPoolAddr).getTotalAssetDeposits(asset);
++            totalAssetAmt = ILRTDepositPool(lrtDepositPoolAddr).getTotalAssetDeposits(asset);
+            totalETHInPool += totalAssetAmt * assetER;
+
+            unchecked {
+                ++asset_idx;
+            }
+        }
+
+        return totalETHInPool / rsEthSupply;
+    }
+
+```
+
+
+
+
 
 
