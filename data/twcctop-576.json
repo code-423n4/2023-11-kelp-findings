@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "twcctop",
+  "risk": "2",
+  "title": "`depositAssetIntoStrategy`  should check `eigenlayer` maxdeposit limit",
+  "issueId": 576,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/576"
+}
