@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "deth",
+  "risk": "3",
+  "title": "LRTDepositPool.sol#depositAsset() - Price of rsETH can be manipulated by first depositor, which will cause loss of funds for consecutive users",
+  "issueId": 621,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/621"
+}
