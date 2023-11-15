@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "CatsSecurity",
+  "risk": "3",
+  "title": "stETH/ETH, cbETH/ETH, rETH/ETH chainlink oracle has too long of heartbeat and deviation threshold which can wrong calculations and loss of funds",
+  "issueId": 687,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/687"
+}
