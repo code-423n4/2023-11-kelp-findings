@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "shealtielanz",
+  "risk": "3",
+  "title": "`getRsETHAmountToMint()` will return incorrect amount to mint.",
+  "issueId": 783,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/783"
+}
