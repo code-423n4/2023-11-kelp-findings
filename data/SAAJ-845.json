@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "SAAJ",
+  "risk": "2",
+  "title": "latestRoundData recommendation does not have consideration for stale price",
+  "issueId": 845,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/845"
+}
