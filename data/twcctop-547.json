@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "twcctop",
+  "risk": "3",
+  "title": "`LRTDepositPool` is vunerable to inflation attack. ",
+  "issueId": 547,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/547"
+}
