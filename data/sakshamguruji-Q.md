@@ -44,6 +44,8 @@ transfer assets from the deposit pool to the NDC .
 If the nodeDelegator is a 0 address (mistakenly provided an index in the nodeDelegatorQueue mapping with no value set yet) then funds would be transferred to the 0 address and would be lost forever. A regular ERC20 would revert
 in a 0  address transfer but if it is an ERC20 which supports this , then this is an issue.
 
+Eventhough only stETH, rETH, cbETH are supported yet it is possible more diff assets are added in future.
+
 
 ## Part 2: If The Asset Is An ERC20 Which Does Not Revert On 0 Address Transfer Then Funds Would Be Lost
 
@@ -52,6 +54,8 @@ in a 0  address transfer but if it is an ERC20 which supports this , then this i
 Asset can be deposited into the eigen strategy manager from here https://github.com/code-423n4/2023-11-kelp/blob/main/src/NodeDelegator.sol#L67 , to get the strategy address we call the `lrtConfig.assetStrategy(asset)` at L59 , but if there's not strategy set yet to the asset this would be a 0 address and the call would revert since we are transferring to 0-address inside Eigen strategy Manager.
 
 If the asset was a token which did not revert on 0 address transfers then funds would have been lost.
+Eventhough only stETH, rETH, cbETH are supported yet it is possible more diff assets are added in future.
+
 
 ## 0 Value Sanity Check
 
