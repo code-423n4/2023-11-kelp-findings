@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Amithuddar",
+  "risk": "2",
+  "title": "This check doesn't guarantee that the address is valid or  that it corresponds to a deployed contract",
+  "issueId": 575,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/575"
+}
