@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "btk",
+  "risk": "2",
+  "title": "Deriving the price with balanceOf() is dangerous",
+  "issueId": 788,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/788"
+}
