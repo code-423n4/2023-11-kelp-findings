@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Pechenite",
+  "risk": "2",
+  "title": "`LRTDepositPool.sol#depositAsset()` lack of min minted amount received and expiration timestamp checks",
+  "issueId": 647,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/647"
+}
