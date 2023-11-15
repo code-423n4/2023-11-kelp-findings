@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xHelium",
+  "risk": "3",
+  "title": "Custom strategies on EigenLayer can wipe out nodeDelegator asset balance after max approving them to spend uint(256).max amount of asset",
+  "issueId": 577,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/577"
+}
