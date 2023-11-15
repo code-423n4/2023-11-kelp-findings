@@ -102,3 +102,69 @@ File: src\LRTConfig.sol
 163:     }
 ```
 https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTConfig.sol#L149-L163
+
+## LRTManager can transfer asset tokens to `NodeDelegator` while contract is paused
+
+`LRTDepositPool` uses `Pausable` to allow the manager/admin to pause the contract and prevent any sensitive actions, however `transferAssetToNodeDelegator()` is missing the `whenNotPaused` modifier, meaning it is callable even if the contract is in a paused state. The transfer of funds should not be permitted while the contract is paused (in `NodeDelegator`, functions that transfer funds use the `whenNotPaused` modifier even if they are admin protected).
+
+Add the `whenNotPaused` modifier to `transferAssetToNodeDelegator()`.
+
+https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L183-L192
+
+## `LRTConfig#updateAssetDepositLimit()` can cause DoS
+
+`LRTConfig#updateAssetDepositLimit()` is used by the LTR manager to change the `depositLimit` for a particular asset after initialization.
+
+```solidity
+File: src\LRTConfig.sol
+
+094:     function updateAssetDepositLimit(
+095:         address asset,
+096:         uint256 depositLimit
+097:     )
+098:         external
+099:         onlyRole(LRTConstants.MANAGER)
+100:         onlySupportedAsset(asset)
+101:     {
+102:         depositLimitByAsset[asset] = depositLimit;
+103:         emit AssetDepositLimitUpdate(asset, depositLimit);
+104:     }
+```
+https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTConfig.sol#L94-L104
+
+However it is lacking checks on the new `depositLimit` value, meaning it is possible to set it below the amount of currently deposited assets, and doing so would result in DoS. This could occur by mistake, or intentionally by a malicious/compromised manager. 
+
+If the `depositLimit` is set to a value less than the current total assets deposited, then `getAssetCurrentLimit()` would revert due to underflow:
+
+```solidity
+File: src\LRTDepositPool.sol
+
+56:     function getAssetCurrentLimit(address asset) public view override returns (uint256) {
+57:         return lrtConfig.depositLimitByAsset(asset) - getTotalAssetDeposits(asset); // @audit underflow
+58:     }
+```
+https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L56-L58
+
+`getAssetCurrentLimit()` is called within `depositAsset()`, meaning that in this scenario users would not be able to deposit. Consider preventing this by requiring that the new `depositLimit` passed to `updateAssetDepositLimit` is less than `getTotalAssetDeposits()`.
+
+## Ensure `updateAssetStrategy()` cannot set invalid strategy address
+
+A malicious/compromised manager (or one who makes a mistake) could set an invalid strategy address, which could potentially lead to a large loss of user funds. Prevent this by checking that the destination address is indeed an EigenLayer strategy. This can be done by calling `explanation()` on the target address and checking it is equal to the expected result (it is the same for each of the three strategies [[1]](https://etherscan.io/address/0x54945180dB7943c0ed0FEE7EdaB2Bd24620256bc#readProxyContract) [[2]](https://etherscan.io/address/0x93c4b944D05dfe6df7645A86cd2206016c51564D#readProxyContract) [[3]](https://etherscan.io/address/0x1BeE69b7dFFfA4E2d53C2a2Df135C388AD25dCD2#readProxyContract)).
+
+```diff
+    function updateAssetStrategy(
+        address asset,
+        address strategy
+    )
+        external
+        onlyRole(DEFAULT_ADMIN_ROLE)
+        onlySupportedAsset(asset)
+    {
+        UtilLib.checkNonZeroAddress(strategy);
++       require(IStrategy(strategy).explanation() == "Base Strategy implementation to inherit from for more complex implementations");
+        if (assetStrategy[asset] == strategy) {
+            revert ValueAlreadyInUse();
+        }
+        assetStrategy[asset] = strategy;
+    }
+```
