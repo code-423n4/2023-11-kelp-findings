@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "cartlex_",
+  "risk": "2",
+  "title": "`getRSETHPrice()` revert due to `asset_idx` can't iterate more than type(uint16).max",
+  "issueId": 509,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/509"
+}
