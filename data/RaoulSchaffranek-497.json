@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "RaoulSchaffranek",
+  "risk": "2",
+  "title": "LRTConfigRoleChecker.updateLRTConfig allows permanent loss of admin privileges and can lead to DoS scenario",
+  "issueId": 497,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/497"
+}
