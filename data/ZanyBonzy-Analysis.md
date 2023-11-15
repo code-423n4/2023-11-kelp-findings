@@ -45,8 +45,9 @@
 
 ## **Recommendations**
 -  
-  1. Consider implementing a backup oracle to serve as an alternative to mitigate the risk of Chainlink failure.
-  2. Use the safe erc20 operations instead and introduce balance checks before and after transfers.
+  1. The Chainlink uses the AggregatorInterface which is a deprecated Chainlink API. Consider switching to the newer AggregatorV3Interface.
+  1. Consider also, an alternative/backup oracle to reduce Chainlink dependency.
+  2. Use the safe ERC20 operations and introduce balance checks before and after transfers.
   3. Consider introducing a `multiplier` constant to deal with possible precision loss when performing division operations.
   4. Consider introducing functions to remove assets/strategies from the suppported lists in case support for any of the currently-in-use ones is stopped.
   5. Consider creating a proper documentation through which users and developers can better understand the contracts and functions.
@@ -55,6 +56,8 @@
   ***
 ## **Conclusion**
   In general, the protocol seems interesting and we're anticipating what the team has in store next. The architecture is solid, the codebase is well written, and most of the easy-to-overlook safety measures are actually implemented. However, the identified risks need to be mitigated, and provided recommendations should be taken into consideration. Constant upgrades and audits should be invested in to ensure the security of the protocol.
+
+
 
 
 
