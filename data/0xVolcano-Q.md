@@ -1,0 +1,1 @@
+### The contracts should use the upgradeable erc20 token version
