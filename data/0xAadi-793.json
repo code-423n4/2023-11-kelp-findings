@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xAadi",
+  "risk": "2",
+  "title": "The `depositAssetIntoStrategy` function successfully emits the `AssetDepositIntoStrategy` event even if the underlying `depositIntoStrategy()` operation in Eigenlayers fails.",
+  "issueId": 793,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/793"
+}
