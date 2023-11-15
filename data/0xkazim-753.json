@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xkazim",
+  "risk": "2",
+  "title": "the `transferBackToLRTDepositPool` not following the protocol diagram",
+  "issueId": 753,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/753"
+}
