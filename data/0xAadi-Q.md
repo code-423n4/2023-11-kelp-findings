@@ -19,7 +19,7 @@
 | |Issue|Instances|
 |-|:-|:-:|
 | [[N&#x2011;01](#n01-relocating-the-definition)] | Consider relocating the definition of `DEFAULT_ADMIN_ROLE` to `LRTConstants.sol` for better adherence to coding standards. | 1 |
-| [[N&#x2011;02](#n02-verify-the-current-value)] | Verify the current value before assigning the new value to prevent unnecessary gas consumption in the event of setting the same value. | 3 |
+| [[N&#x2011;02](#n02-verify-the-current-value)] | Verify the current value before assigning the new value to prevent unnecessary gas consumption in the event of setting the same value. | 4 |
 | [[N&#x2011;03](#n03-renaming-the-function)] | Consider renaming the function `updateAssetStrategy()` to `setAssetStrategy()` for improved code standardization. | 1 |
 | [[N&#x2011;04](#n04-remove-comment)] | Remove unwanted comments | 1 |
 
@@ -277,7 +277,7 @@ File: src/utils/LRTConfigRoleChecker.sol
 
 ### [N&#x2011;02] Verify the current value before assigning the new value to prevent unnecessary gas consumption in the event of setting the same value.
 
-*There are 3 instances of this issue:*
+*There are 4 instances of this issue:*
 
 ```solidity
 File: src/LRTConfig.sol
@@ -303,6 +303,13 @@ File: src/LRTOracle.sol
 97:        assetPriceOracle[asset] = priceOracle;
 ```
 *GitHub*: [97](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L97)
+
+```solidity
+File: src/oracles/ChainlinkPriceOracle.sol
+
+47:        assetPriceFeed[asset] = priceFeed;
+```
+*GitHub*: [47](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/oracles/ChainlinkPriceOracle.sol#L47)
 
 ### [N&#x2011;03] Consider renaming the function `updateAssetStrategy()` to `setAssetStrategy()` for improved code standardization.
 
