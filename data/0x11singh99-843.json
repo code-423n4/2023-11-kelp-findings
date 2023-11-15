@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0x11singh99",
+  "risk": "2",
+  "title": "`getAssetPrice` in `ChainlinkPriceOracle.sol` can return stale price.",
+  "issueId": 843,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/843"
+}
