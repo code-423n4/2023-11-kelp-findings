@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "xAriextz",
+  "risk": "2",
+  "title": "Use of deprecated Chainlink function `latestAnswer()`",
+  "issueId": 659,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/659"
+}
