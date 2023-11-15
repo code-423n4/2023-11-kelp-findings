@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "GREY-HAWK-REACH",
+  "risk": "2",
+  "title": "NodeDelegator's stETH balance may exceed EigenLayer's maxPerDeposit / maxTotalDeposit, resulting in soft DoS",
+  "issueId": 493,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/493"
+}
