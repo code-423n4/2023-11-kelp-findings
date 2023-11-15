@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "bLnk",
+  "risk": "2",
+  "title": "ChainlinkPriceOracle::getAssetPrice() does not perform a heartbeat check with latestRoundData",
+  "issueId": 623,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/623"
+}
