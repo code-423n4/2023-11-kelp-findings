@@ -126,3 +126,27 @@ Internal functions in Solidity are only intended to be invoked within the contra
 13:    }
 ````
 [https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/UtilLib.sol#L11-L13](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/utils/UtilLib.sol#L11-L13)
+## [G-05] `+=` and `-=` are more expensive
+## Relevant GitHub Links
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L83](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L83)
+
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L84](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L84)
+
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L71](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L71)
+## Summary
+## Vulnerability Details
+LRTDepositPool.sol line 83 -> `assetLyingInNDCs += IERC20(asset).balanceOf(nodeDelegatorQueue[i]);`
+
+LRTDepositPool.sol line 83 -> `assetStakedInEigenLayer += INodeDelegator(nodeDelegatorQueue[i]).getAssetBalance(asset);`
+
+LRTOracle.sol line 71 -> `totalETHInPool += totalAssetAmt * assetER;`
+
+In computation, the form `x= x + y` is cheaper than `x += y`, and `x= x - y` is cheaper than `x -= y`; Not sure why but have seen this in many audit reports. I guess its related to below : `x +=y` can be seen as `x += 1`(most expensive) about y times and we know that `x+=1` is most expensive form versus `x++`(6 gas less than `x+=1`) and `++x` (5 gas less than `x++`)
+## Impact
+Gas: If we look at all the instances the gas saved adds up. However, there is careful consideration as the `x+=y` format is more readable so it's important protocol plugs the numbers to see gas savings and see if worth the readability. My take is readability is not that harmed there are code parts longer than the `x = x + y` form in functions, plus I believe it's best to put gas more important to save deployment and user costs.
+## Tools Used
+Manual Analysis
+## Recommendations
+It is recommended to use the form `x = x + y;` or `x = x-y;` See the example below:
+
+`assetLyingInNDCs = assetLyingInNDCs + IERC20(asset).balanceOf(nodeDelegatorQueue[i]);`
