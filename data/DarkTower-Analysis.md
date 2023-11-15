@@ -7,6 +7,7 @@ This analysis report goes over the various components and sections of the KelpDA
 Severity  | Instances 
 ------------- | -------------
 Medium  | 1
+Low     | 2
 
 ## Comments for judge to contextualize the findings
 This is to help the judge reduce the time spent on judging. Our findings are mainly chainlink implementations issues that protocol team need to fix before going live. For this audit, we are not submitting low/gas or non critical issues.
@@ -57,8 +58,9 @@ Other test coverage    | Most of the functional tests are covered with Foundry  
 2. The rewards mechanism is dependent on EigenLayer strategy. If something goes incorrectly in EigenLayer side, user might face losses of funds. 
 
 ## Time Spent
-2 days.
-30 hours.
+5 hours.
+
+
 
 
 
@@ -66,4 +68,4 @@ Other test coverage    | Most of the functional tests are covered with Foundry  
 
 
 ### Time spent:
-30 hours
+5 hours
