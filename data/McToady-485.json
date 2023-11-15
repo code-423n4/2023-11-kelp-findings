@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "McToady",
+  "risk": "2",
+  "title": "No repeat address check for node delegator queue could cause accounting errors",
+  "issueId": 485,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/485"
+}
