@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "SAAJ",
+  "risk": "2",
+  "title": "Saving balance of token in variable can lead to wrong amount transfer or failure",
+  "issueId": 851,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/851"
+}
