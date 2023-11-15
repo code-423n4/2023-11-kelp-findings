@@ -1,3 +1,4 @@
+# [L-01] The max amount for a single deposit into EigenLayer strategy can't be reached.
 # Lines of code
 
 https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTDepositPool.sol#L132-L134
