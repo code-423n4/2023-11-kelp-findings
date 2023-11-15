@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xDING99YA",
+  "risk": "2",
+  "title": "setRSETH() in LRTConfig.sol can unexpectedly reset rsETH price to 1 ether, which can be different from the real price",
+  "issueId": 475,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/475"
+}
