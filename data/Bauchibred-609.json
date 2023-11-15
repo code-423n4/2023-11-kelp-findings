@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Bauchibred",
+  "risk": "2",
+  "title": "The exchange rate for `stETH` is not gotten in the most optimal way which could lead to mis-valuing the current `totalETHInPool` or even over/under-valuing the amount of `rsETH` to mint via `depositAsset()`",
+  "issueId": 609,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/609"
+}
