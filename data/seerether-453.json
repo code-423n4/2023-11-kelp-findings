@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "Approving the maximum amount of an ERC20 token to transfer could potentially be dangerous and lead to tokens being stolen. ",
+  "issueId": 453,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/453"
+}
