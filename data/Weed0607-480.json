@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Weed0607",
+  "risk": "3",
+  "title": "rsETHPrice can be manipulated using direct transfer to the LRTDepositPool or NodeDelegator.",
+  "issueId": 480,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/480"
+}
