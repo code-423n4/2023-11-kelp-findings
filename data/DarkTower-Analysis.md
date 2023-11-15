@@ -50,12 +50,17 @@ Complexity Management    | Protocol handles the complexity of the codebase prope
 Other test coverage    | Most of the functional tests are covered with Foundry  | Excellent
 
 ## Centralization Risks
-
+1. In current implementation, users can't directly deposit into Node Delegators or Strategies. If the LRTAdmin doesn't transfer the funds in time, the funds might struck in `DepositPool` and `NodeDelegators` contract as there is no way user can remove the funds from the protocol.
+2. 
 ## System Risks
+1. Using a oracle with less care might results into loss of funds for users if price feed isn't sanitized properly.
+2. The rewards mechanism is dependent on EigenLayer strategy. If something goes incorrectly in EigenLayer side, user might face losses of funds. 
 
 ## Time Spent
 2 days.
 30 hours.
+
+
 
 
 ### Time spent:
