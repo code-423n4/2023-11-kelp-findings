@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "niser93",
+  "risk": "2",
+  "title": "An erroneus setting of deposit limit leads to Integer Overflow",
+  "issueId": 525,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/525"
+}
