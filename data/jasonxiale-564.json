@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "jasonxiale",
+  "risk": "2",
+  "title": "`LRTConfig.updateAssetStrategy` lacks of necessary check which might have bad influence in price",
+  "issueId": 564,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/564"
+}
