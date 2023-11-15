@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Topmark",
+  "risk": "3",
+  "title": "Asset can be Transferred to NodeDelegator that has not been Verified to be successfully Added",
+  "issueId": 610,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/610"
+}
