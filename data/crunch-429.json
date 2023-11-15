@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "crunch",
+  "risk": "3",
+  "title": "User can not get the same asset back after deposit",
+  "issueId": 429,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/429"
+}
