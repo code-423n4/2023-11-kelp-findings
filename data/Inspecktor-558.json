@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Inspecktor",
+  "risk": "3",
+  "title": "The user may lose funds if oracle returns 0 in case of incorrect operation",
+  "issueId": 558,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/558"
+}
