@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Jiamin",
+  "risk": "3",
+  "title": "Should not transfer LST tokens from depositor before minting rsETH tokens to the depositor",
+  "issueId": 449,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/449"
+}
