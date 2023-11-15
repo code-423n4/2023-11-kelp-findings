@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "lsaudit",
+  "risk": "2",
+  "title": "`getAssetBalance()` may return incorrect value when strategy has been changed",
+  "issueId": 419,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/419"
+}
