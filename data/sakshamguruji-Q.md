@@ -8,6 +8,21 @@ There should be checks in place to make sure this value is more than totalAssetD
 because here https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTDepositPool.sol#L57 it would revert
 if deposit limit for the asset was less than the totalAssetDeposits for the asset
 
+## No Withdraw Functionality
+
+### Description:
+
+According to the docs/blogs there should exist a withdraw module which assists rsETH holders in converting their rsETH tokens into a share of all assets managed by the protocol. Redeemers can expect to receive a complex set of various rewards received by Node Delegators for delegating to operators subscribed to various AVSes.
+
+This functionality is either yet to be added or is missing from the logic.
+
+## Add gaps Variable To the Upgradeable Contracts
+
+### Description:
+
+All the kelp contracts are upgradeable.
+For upgradeable contracts, there must be storage gap to “allow developers to freely add new state variables in the future without compromising the storage compatibility with existing deployments” (quote OpenZeppelin). Otherwise it may be very difficult to write new implementation code. Without storage gap, the variable in child contract might be overwritten by the upgraded base contract if new variables are added to the base contract. This could have unintended and very serious consequences to the child contracts, potentially causing loss of user fund or cause the contract to malfunction completely.
+
 ## Sanity Check To Prevent Rounding Error By Setting A Min Deposit Value
 
 ### Description:
