@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "almurhasan",
+  "risk": "2",
+  "title": "Assets funds can go/transfer to address(0) when LRTmanager calls the  function depositAssetIntoStrategy.",
+  "issueId": 460,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/460"
+}
