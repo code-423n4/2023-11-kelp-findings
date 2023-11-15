@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "roleengineer",
+  "risk": "2",
+  "title": "`getRSETHPrice()` may return incorrect price",
+  "issueId": 620,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/620"
+}
