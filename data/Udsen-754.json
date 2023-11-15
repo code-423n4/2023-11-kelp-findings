@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Udsen",
+  "risk": "2",
+  "title": "USE OF DEPRECATED CHAINLINK FUNCTION `latestAnswer` IN THE `ChainlinkPriceOracle.getAssetPrice` FUNCTION TO GET THE ASSET PRICES",
+  "issueId": 754,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/754"
+}
