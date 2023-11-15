@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "lsaudit",
+  "risk": "2",
+  "title": "Protocol does not provide ability to remove previously added NodeDelegator contract addresses",
+  "issueId": 422,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/422"
+}
