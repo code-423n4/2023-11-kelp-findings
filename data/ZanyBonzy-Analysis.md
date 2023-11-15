@@ -7,17 +7,18 @@
 
   As the codebase is still in the development phase, it's not very large. However, it's well-structured, and functions are broken down into small, easy-to-understand bits - not too cyclomatically complex. The codebase (in scope) comprises a total of 17 contracts (8 interfaces and 9 actual contracts) and about 500 SLoC. The codebase mostly uses inheritance, defines no structs, and includes 2 external calls (to Chainlink oracle and to EigenLayer). The overall test line coverage is about 98%. The core contracts are designed to be upgradeable; therefore, the protocol uses OZ upgradeable imports.
   
-- The contracts in scope (other than the interfaces) are 
-  1. `LRTConfig.sol` is the protocol's configuration contract	that also stores the protocols' contract addresses.
-  2. `LRTDepositPool.sol` is the contract through which users deposit funds to the protocol, and have their funds transferred to the `NodeDelegator` contracts.
-  3. `NodeDelegator.sol` receives funds from the depositpool and delegates them to the eigenlayer strategy.
-  4. `LRTOracle.sol` fetches prices of LST tokens from oracles.
-  5. `RSETH.sol` is the	receipt token a user receives upon depositing in `LRTDepositPool.sol`.
-  6. `ChainlinkPriceOracle.sol` is integrates chainlink oracles in LRTOracle.
-  7. `LRTConfigRoleChecker.sol` performs role checks.
-  8. `UtilLib.sol is the helper` function library. It handles 0x0 address checks.
-  9. `LRTConstants` is contains the global constant variables.
+- The contracts in scope are 
+  1. [`LRTConfig.sol`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTConfig.sol) is the protocol's configuration contract	that also stores the protocols' contract addresses.
+  2. [`LRTDepositPool.sol`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTDepositPool.sol) is the contract through which users deposit funds to the protocol, and have their funds transferred to the `NodeDelegator` contracts.
+  3. [`NodeDelegator.sol`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/NodeDelegator.sol) receives funds from the depositpool and delegates them to the eigenlayer strategy.
+  4. [`LRTOracle.sol`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTOracle.sol) fetches prices of LST tokens from oracles.
+  5. [`RSETH.sol`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/RSETH.sol) is the token a user receives upon depositing in `LRTDepositPool.sol`.
+  6. [`ChainlinkPriceOracle.sol`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/oracles/ChainlinkPriceOracle.sol) is integrates chainlink oracles in LRTOracle.
+  7. [`LRTConfigRoleChecker.sol`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/utils/LRTConfigRoleChecker.sol) performs role checks.
+  8. [`UtilLib.sol`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/utils/UtilLib.sol) is the helper function library. It handles 0x0 address checks.
+  9. [`LRTConstants`](https://github.com/code-423n4/2023-11-kelp/blob/main/src/utils/LRTConstants.sol) is contains the global constant variables.
 
+and the interface contracts
 ***
 ## **Architecture Review**
 
@@ -27,11 +28,10 @@
 ## **Protocol Risks**
 - Some of the risks that can affect the protocol include
   1. Risk from centralization, malicious or compromised managers and admins.
-  2. Any issues with the EigenLayer can have a ripple effect on the protocol.
-  3. Compromised smart contracts in the protocol.
+  2. Risks from third-party contract dependencies - OZ contracts, ChainLink AggregatorInterface, EigenLayer strategyManager.
+  3. Risks from compromised smart contracts in the protocol.
   4. Issues with ChainLink oracle can affect asset prices and consequently, amount of `rsETH` tokens minted.
   5. Non-standard ERC20 token types, if they get integrated. The protocol's `stETH` is a token with variable balance and can result in accounting issues.
-  6. Risks from third-party contract dependencies.
 
 ***
  
@@ -40,12 +40,12 @@
     1. We reviewed the provided documents, blogs, and also noted other explanations provided by the developers on Discord.
     2. We ran the contracts through Slither and compared the generated report to the bot reports. From this, we weeded out the known issues and false positives.
     3. We carefully reviewed the codebase, ran provided tests, and worked out various attack vectors. We also tested the functions' logic to make sure they work as intended.
-    4. We noted our findings and created the analysis report.
+    4. We noted our findings and created the needed reports.
  ***    
 
 ## **Recommendations**
 -  
-  1. The Chainlink uses the AggregatorInterface which is a deprecated Chainlink API. Consider switching to the newer AggregatorV3Interface.
+  1. The protocol uses the AggregatorInterface which is a deprecated Chainlink API. Consider switching to the newer AggregatorV3Interface.
   1. Consider also, an alternative/backup oracle to reduce Chainlink dependency.
   2. Use the safe ERC20 operations and introduce balance checks before and after transfers.
   3. Consider introducing a `multiplier` constant to deal with possible precision loss when performing division operations.
@@ -55,7 +55,9 @@
 
   ***
 ## **Conclusion**
-  In general, the protocol seems interesting and we're anticipating what the team has in store next. The architecture is solid, the codebase is well written, and most of the easy-to-overlook safety measures are actually implemented. However, the identified risks need to be mitigated, and provided recommendations should be taken into consideration. Constant upgrades and audits should be invested in to ensure the security of the protocol.
+  The KelpDao seems interesting and we're anticipating what the team has in store next. The architecture is solid, the codebase is well written, and most of the easy-to-overlook safety measures are actually implemented. However, the identified risks need to be mitigated, and provided recommendations should be taken into consideration. Constant upgrades and audits should be invested in to ensure the security of the protocol.
+
+
 
 
 
