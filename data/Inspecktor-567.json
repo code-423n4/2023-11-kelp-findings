@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Inspecktor",
+  "risk": "2",
+  "title": "Using transferFrom may result in incorrect operation",
+  "issueId": 567,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/567"
+}
