@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "seerether",
+  "risk": "3",
+  "title": "The use of ++i in the for loop can potentially cause an overflow and infinite loop.",
+  "issueId": 446,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/446"
+}
