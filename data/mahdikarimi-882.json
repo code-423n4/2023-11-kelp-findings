@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "mahdikarimi",
+  "risk": "2",
+  "title": "Changing rsETH address breaks contract",
+  "issueId": 882,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/882"
+}
