@@ -22,6 +22,7 @@ the protocol lacks in documentation, should definelty add documentation , especi
 
 as the protocol acts like a pool for deposited assets, the systemic risks are all the problems with erc4626 vault meaning : inflation attack, problems with exchange rate and so on.
 should also be careful about the interaction with the deposited assets as they are rebasing tokens, it is hard to integrate with them and many things could go wrong.
+should also be careful about interaction with eigenlayer.
     
 ### <a href="#Summary">[g]</a><a name="#g"> Architecture recommendation
 
@@ -37,6 +38,8 @@ example:
 if NodeDelegatorcount = 10 -> 10 external calls to eigenlayerStrategies.
     
 this all high gas cost, replace all this with a mapping (token => uint) that is in `LRTDepositPool` that keeps balance of how much of each asset was deposited, when checking limit only storage reads.
+
+
 
 ### Time spent:
 20 hours
