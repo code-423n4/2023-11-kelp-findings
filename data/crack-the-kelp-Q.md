@@ -206,3 +206,16 @@ File: src/LRTDepositPool.sol
 
 [[170](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTDepositPool.sol#L170)]
 
+# Lack of pausable functionality implementation
+
+Even though the `pause` and `unpause` functions are implemented in the `LRTOracle` contract, there is no functionality that checks if the contract is paused or not. Consider using the functionality that inheriting from the `PausableUpgradeable` contract offers.
+
+```solidity
+File: src/LRTOracle.sol
+
+19: 		        contract LRTOracle is ILRTOracle, LRTConfigRoleChecker, PausableUpgradeable {
+
+```
+
+[[19](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTOracle.sol#L19)]
+
