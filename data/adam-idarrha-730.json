@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "adam-idarrha",
+  "risk": "2",
+  "title": "wrong price reported by `getAssetPrice` and `getRSETHPrice` because of wrong use of chainlink oracle",
+  "issueId": 730,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/730"
+}
