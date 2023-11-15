@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "qpzm",
+  "risk": "3",
+  "title": "`LRTDepositPool.depositAsset` is vulnerable to ERC4626 inflation attacks",
+  "issueId": 430,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/430"
+}
