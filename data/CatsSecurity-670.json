@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "CatsSecurity",
+  "risk": "2",
+  "title": "Using deprecate variabel latestAnswer and chainlink return values are not properly validated and may return stale price",
+  "issueId": 670,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/670"
+}
