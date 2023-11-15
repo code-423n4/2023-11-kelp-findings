@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "poneta",
+  "risk": "2",
+  "title": "changes to state variables must not be made in modifiers",
+  "issueId": 732,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/732"
+}
