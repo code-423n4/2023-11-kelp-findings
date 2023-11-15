@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "baice",
+  "risk": "3",
+  "title": "Unmatched price decimal (rsETH decimal 18 and stETH/rETH/cbETH from chainlink decimai 8)",
+  "issueId": 527,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/527"
+}
