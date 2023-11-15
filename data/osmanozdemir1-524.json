@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "osmanozdemir1",
+  "risk": "3",
+  "title": "`rsETH` amount to mint calculation when depositing an asset in the `LRTDepositPool::depositAsset()` is incorrect, leading to an immediate loss of value",
+  "issueId": 524,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/524"
+}
