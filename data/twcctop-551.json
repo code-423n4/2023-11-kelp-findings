@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "twcctop",
+  "risk": "3",
+  "title": "Bad usage of chainlink oracle ",
+  "issueId": 551,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/551"
+}
