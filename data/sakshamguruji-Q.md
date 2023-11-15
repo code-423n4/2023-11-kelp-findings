@@ -128,3 +128,14 @@ balance is more than 0 , if not then we are transferring 0 value to the strategy
 Also here , https://github.com/code-423n4/2023-11-kelp/blob/main/src/NodeDelegator.sol#L86 we are transferring
 asset to the deposit pool , make sure the balance of the asset in the NDC is more than 0 so that we dont perform
 a 0 value transfer.
+
+## Sanity Check To Ensure Approval Is Done Prior To Depositing Into Eigen
+
+### Description:
+
+NDC can deposit into StrategyManager here https://github.com/code-423n4/2023-11-kelp/blob/main/src/NodeDelegator.sol#L51   , for this deposit to happen the NDC should first approve the
+strategy manager contract of the assets(max approval) which is done via `maxApproveToEigenStrategyManager` at
+L38.
+It should be ensured in the `depositAssetIntoStrategy` function before depositing that there is approval to the 
+strategy manager or else the call reverts.
+A better decision would be to call the `maxApproveToEigenStrategyManager` (declare it public) inside the `depositAssetIntoStrategy`
