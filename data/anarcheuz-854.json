@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "anarcheuz",
+  "risk": "2",
+  "title": "Missing check on deposited amount",
+  "issueId": 854,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/854"
+}
