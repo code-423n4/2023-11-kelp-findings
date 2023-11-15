@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Daniel526",
+  "risk": "2",
+  "title": "Asset Transfer Function Susceptible to Pause State Ignorance",
+  "issueId": 433,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/433"
+}
