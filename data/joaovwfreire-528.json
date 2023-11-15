@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "joaovwfreire",
+  "risk": "3",
+  "title": "getRSETHPrice can be manipulated to return excessive high values at the pool's initial states",
+  "issueId": 528,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/528"
+}
