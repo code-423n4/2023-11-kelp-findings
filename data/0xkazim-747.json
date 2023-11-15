@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xkazim",
+  "risk": "2",
+  "title": "emitting event is missed in one of the important function `updateAssetStrategy `",
+  "issueId": 747,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/747"
+}
