@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "zhaojie",
+  "risk": "3",
+  "title": "When RsETH totalSupply is 0, the protocol will not work if the user deposits 1wei of assets.",
+  "issueId": 441,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/441"
+}
