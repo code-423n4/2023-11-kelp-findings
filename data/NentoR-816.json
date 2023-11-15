@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "NentoR",
+  "risk": "2",
+  "title": "LRTDepositPool's deposit() doesn't handle fee-on-transfer tokens ",
+  "issueId": 816,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/816"
+}
