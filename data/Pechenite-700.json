@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Pechenite",
+  "risk": "2",
+  "title": "After the changing of `LRTConfig` via `LRTConfigRoleChecker.sol#updateLRTConfig()` many bugs/problems will arise",
+  "issueId": 700,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/700"
+}
