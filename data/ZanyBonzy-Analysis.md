@@ -30,7 +30,7 @@
   2. Any issues with the EigenLayer can have a ripple effect on the protocol.
   3. Compromised smart contracts in the protocol.
   4. Issues with ChainLink oracle can affect asset prices and consequently, amount of `rsETH` tokens minted.
-  5. Non-standard ERC20 token types, if they eventually get integrated.
+  5. Non-standard ERC20 token types, if they get integrated. `stETH` is a token with variable balance.
   6. Risks from third-party contract dependencies.
 
 ***
@@ -46,7 +46,7 @@
 ## **Recommendations**
 -  
   1. Consider implementing a backup oracle to serve as an alternative to mitigate the risk of Chainlink failure.
-  1. Due to the limited range of ERC20 tokens supported by EigenLayer, the protocol gets a pass for not performing safe ERC20 operations. But depending on the token types to be integrated, it's safer to use them.
+  2. Use the safe erc20 operations instead and introduce balance checks before and after transfers.
   3. Consider introducing a `multiplier` constant to deal with possible precision loss when performing division operations.
   4. Consider introducing functions to remove assets/strategies from the suppported lists in case support for any of the currently-in-use ones is stopped.
   5. Consider creating a proper documentation through which users and developers can better understand the contracts and functions.
@@ -55,6 +55,8 @@
   ***
 ## **Conclusion**
   In general, the protocol seems interesting and we're anticipating what the team has in store next. The architecture is solid, the codebase is well written, and most of the easy-to-overlook safety measures are actually implemented. However, the identified risks need to be mitigated, and provided recommendations should be taken into consideration. Constant upgrades and audits should be invested in to ensure the security of the protocol.
+
+
 
 
 
