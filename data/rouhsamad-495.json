@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "rouhsamad",
+  "risk": "3",
+  "title": "Approving a malicous EIGEN_STRATEGY_MANAGER from node delegators could result in all the funds being stolen",
+  "issueId": 495,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/495"
+}
