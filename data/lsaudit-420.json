@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "lsaudit",
+  "risk": "2",
+  "title": "RSETH is not fully pausable",
+  "issueId": 420,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/420"
+}
