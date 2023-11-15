@@ -178,3 +178,31 @@ File: src/LRTOracle.sol
 # Missing function declaration in interface
 
 The interface `INodeDelegator` is missing the declaration of the `transferBackToLRTDepositPool` function, implemented in `NodeDelegator`. Consider declaring all functions in the interface as it improves readability.
+
+# Redundant check for zero address
+
+In the `initialize` function, the internal functions `_setToken` and `_addNewSupportedAsset` ensure that the asset is not set to the zero address. To save gas during initialization, consider removing these lines:
+
+```solidity
+File: src/LRTConfig.sol
+
+52: 		    UtilLib.checkNonZeroAddress(stETH);
+53:                 UtilLib.checkNonZeroAddress(rETH);
+54:                 UtilLib.checkNonZeroAddress(cbETH);;
+```
+
+[[52](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTConfig.sol#L52), [53](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTConfig.sol#L53), [54](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTConfig.sol#L54)]
+
+# Accidentally add repeated address in `nodeDelegatorQueue` array
+
+The admin might accidentally include the same address more than once in the input array. Since there's no check for duplicates, the function would add the same address multiple times. Consider including a check that prevents the same address from being added to the nodeDelegatorQueue more than once.
+
+```solidity
+File: src/LRTDepositPool.sol
+
+170: 		        nodeDelegatorQueue.push(nodeDelegatorContracts[i]);
+
+```
+
+[[170](https://github.com/code-423n4/2023-11-kelp/blob/main/src/LRTDepositPool.sol#L170)]
+
