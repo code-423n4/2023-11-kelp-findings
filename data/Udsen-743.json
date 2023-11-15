@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Udsen",
+  "risk": "2",
+  "title": "IF ERC777 TOKEN (WHICH IS BACKWARD COMPATIBLE WITH ERC20) IS ADDED AS A SUPPORTED TOKEN IT COULD LEAD TO REENTRNACY ATTACK ONCE DEPOSITED INTO THE `EigenLayer` VIA THE `IEigenStrategyManager.depositIntoStrategy` FUNCTION",
+  "issueId": 743,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/743"
+}
