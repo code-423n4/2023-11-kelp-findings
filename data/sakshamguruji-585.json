@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "sakshamguruji",
+  "risk": "2",
+  "title": "`updatePriceOracleFor` Should Have A whenNotPaused modifier",
+  "issueId": 585,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/585"
+}
