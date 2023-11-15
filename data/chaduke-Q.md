@@ -54,3 +54,13 @@ When lrtDepositPool == address(0), the function will send tokens to the zero add
 [https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L84](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L84)
 
 Mitigation: check and make sure lrtDepositPool != address(0)
+
+QA7. The NodeDelegator contract has not function to withdraw assets from a strategy. 
+
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L51-L68](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L51-L68)
+
+Impact: the funds deposited into a strategy is lost since there is no function to withdraw them from the strategy. 
+
+Mitigation: add a function to allow a user to withdraw funds from a strategy.
+
+
