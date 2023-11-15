@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "0xMilenov",
+  "risk": "2",
+  "title": "Risk of sandwich attack due to no slippage protection",
+  "issueId": 611,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/611"
+}
