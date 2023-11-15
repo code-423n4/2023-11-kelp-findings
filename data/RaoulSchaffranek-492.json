@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "RaoulSchaffranek",
+  "risk": "2",
+  "title": "The decimals property of chainlink feeds are not validated",
+  "issueId": 492,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/492"
+}
