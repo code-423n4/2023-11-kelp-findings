@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Madalad",
+  "risk": "3",
+  "title": "Malicious first depositor can steal all funds from all future depositors",
+  "issueId": 811,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/811"
+}
