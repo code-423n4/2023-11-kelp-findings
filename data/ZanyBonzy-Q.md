@@ -91,3 +91,7 @@ It protects from sending more than the contract's balance or 0 amount.
 ```
 
 8. The protocol uses `stETH` as one of its base assets. stETH is a token subject to variable balances, it rebases both positively and negatively. This token type is a source of accounting issue, which consequently leads inflates/deflates the amount of `rsETH` tokens that the user gets. The protocol also doesn't implement balance checks before the `transfer` and `transferFrom` calls are made. Recommend introducing a balance before and after check before calling the safe transfer options to ensure accurate accounting. Note that this might leave the contract vulnerable to reentrancy, the reentrancy guard should be implemented.
+
+9. Consider adding a timelock to critical functions to give time for users to react and adjust to critical changes. Functions that involve making critical updates like `updatePriceOracleFor`, `updateLRTConfig`, `updateAssetDepositLimit` and so on will benefit from this. It also protects from admin errors.
+
+10 
