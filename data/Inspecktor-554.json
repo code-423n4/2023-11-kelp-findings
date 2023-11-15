@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Inspecktor",
+  "risk": "3",
+  "title": "If the deposit token uses a token with non-standard decimals, the amount of rsETH to mint will be calculated incorrectly",
+  "issueId": 554,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/554"
+}
