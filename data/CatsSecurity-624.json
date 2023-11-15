@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "CatsSecurity",
+  "risk": "3",
+  "title": "ChainlinkPriceOracle will return the wrong price for asset if underlying aggregator hits minAnswer",
+  "issueId": 624,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/624"
+}
