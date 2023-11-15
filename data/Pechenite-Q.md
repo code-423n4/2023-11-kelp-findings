@@ -19,14 +19,15 @@
 
 | ID                | Title |  Severity                  |
 | ----------------- | ----- |  ------------------------- |
-| [L&#x2011;1](#l1-do-not-allow-the-modification-of-the-asset-for-particular-eigenlayer-strategy-after-amount-of-the-specific-asset-has-already-been-deposited-into-the-eigenlayer-strategy)     | The protocol does not ensure that the `EthenaMinting.sol` contract is the `minter` in the `USDe` contract, which can lead to impossible minting of `USDe` tokens for an indefinite period of time | _Low_ |
-| [L&#x2011;2](#l2-a-malicious-lrt-manager-can-disrupt-the-deposit-process-for-a-particular-asset-by-setting-depositlimitbyassetasset-to-a-value-smaller-than-the-actual-total-supply-of-this-asset-within-contracts-consequently-the-depositing-function-will-consistently-revert-due-to-underflow)     | The `_computeDomainSeparator()` function doesn't fully comply with the rules for `EIP-712: DOMAIN_SEPARATOR` | _Low_ |
-| [L&#x2011;3](#l3-ownership-can-be-renounced)     | EIP712 has not been accurately applied to the `Route` struct | _Low_ |
-| [NC&#x2011;1](#nc1-implement-a-check-to-determine-if-the-nodedelegator-already-exists-within-the-lrtdepositpoolsoladdnodedelegatorcontracttoqueue-function)   | Don't grant DEFAULT_ADMIN_ROLE twice in the `EthenaMinting` contract | _Non Critical_ |
-| [NC&#x2011;2](#nc2-a-malicious-user-can-disrupt-the-logic-of-the-lrtdepositpoolsol-contract-by-directly-transferring-assets-to-the-lrtdepositpool-nodedelegator-or-eigenlayer-strategy-contracts)   | Write modifier for `if (msg.sender != minter) revert OnlyMinter();` check in the `USDe#mint()` function, so to be consistent with `USDe#setMinter()` function which performs the access control check in modifier | _Non Critical_ |
-| [NC&#x2011;3](#nc3-grant-the-lrt-manager-permissions-during-the-initialization-of-the-lrtdepositpool-contract)   | Change the names of `removeFromBlacklist()` and `addToBlacklist()` functions | _Non Critical_ |
-| [NC&#x2011;4](#nc4-grant-minter_role-and-burner_role-permissions-during-the-initialization-of-the-rseth-contract)   | Failure to validate functions return values can result in errors | _Non Critical_ |
-| [NC&#x2011;5](#nc5-implement-a-function-for-removing-assets-from-supportedassets-only-if-the-asset-has-not-already-been-transferred-to-the-nodedelegator-contract)   | Add check in `rescueTokens()` if the `to` parameter is `FULL_RESTRICTED_STAKER_ROLE` and if revert | _Non Critical_ |
+| [L&#x2011;1](#l1-do-not-allow-the-modification-of-the-asset-for-particular-eigenlayer-strategy-after-amount-of-the-specific-asset-has-already-been-deposited-into-the-eigenlayer-strategy)     | Do not allow the modification of the `asset` for particular `EigenLayer Strategy` after `amount` of the specific `asset` has already been deposited into the `EigenLayer Strategy` | _Low_ |
+| [L&#x2011;2](#l2-a-malicious-lrt-manager-can-disrupt-the-deposit-process-for-a-particular-asset-by-setting-depositlimitbyassetasset-to-a-value-smaller-than-the-actual-total-supply-of-this-asset-within-contracts-consequently-the-depositing-function-will-consistently-revert-due-to-underflow)     | A malicious `LRT Manager` can disrupt the deposit process for a particular asset by setting `depositLimitByAsset[asset]` to a value smaller than the `actual total supply of this asset within contracts`. Consequently, the depositing function will consistently revert due to underflow | _Low_ |
+| [L&#x2011;3](#l3-ownership-can-be-renounced)     | Ownership Can Be Renounced | _Low_ |
+| [L&#x2011;4](#l4-possible-dos-and-out-of-gas-errors)     | Possible DoS and Out of Gas errors | _Low_ |
+| [NC&#x2011;1](#nc1-implement-a-check-to-determine-if-the-nodedelegator-already-exists-within-the-lrtdepositpoolsoladdnodedelegatorcontracttoqueue-function)   | Implement a check to determine if the `NodeDelegator` already exists within the `LRTDepositPool.sol#addNodeDelegatorContractToQueue()` function | _Non Critical_ |
+| [NC&#x2011;2](#nc2-a-malicious-user-can-disrupt-the-logic-of-the-lrtdepositpoolsol-contract-by-directly-transferring-assets-to-the-lrtdepositpool-nodedelegator-or-eigenlayer-strategy-contracts)   | A malicious user can disrupt the logic of the `LRTDepositPool.sol` contract by directly transferring `assets` to the `LRTDepositPool`, `NodeDelegator` or `EigenLayer Strategy` contracts | _Non Critical_ |
+| [NC&#x2011;3](#nc3-grant-the-lrt-manager-permissions-during-the-initialization-of-the-lrtdepositpool-contract)   | Grant the `LRT Manager` permissions during the initialization of the `LRTDepositPool` contract | _Non Critical_ |
+| [NC&#x2011;4](#nc4-grant-minter_role-and-burner_role-permissions-during-the-initialization-of-the-rseth-contract)   | Grant `MINTER_ROLE` and `BURNER_ROLE` permissions during the initialization of the `RSETH` contract | _Non Critical_ |
+| [NC&#x2011;5](#nc5-implement-a-function-for-removing-assets-from-supportedassets-only-if-the-asset-has-not-already-been-transferred-to-the-nodedelegator-contract)   | Implement a function for removing assets from `supportedAssets` only if the asset has not already been transferred to the `NodeDelegator` contract | _Non Critical_ |
 
 ##
 
@@ -60,7 +61,7 @@ Implement a restriction that prevents the modification of the `asset` for a part
 
 ---
 
-## [L&#x2011;2] A malicious `LRT Manager` can disrupt the deposit process for a particular asset by setting `depositLimitByAsset[asset]` to a value smaller than the `actual total supply of this asset within contracts`. Consequently, the depositing function will consistently revert due to underflow.
+## [L&#x2011;2] A malicious `LRT Manager` can disrupt the deposit process for a particular asset by setting `depositLimitByAsset[asset]` to a value smaller than the `actual total supply of this asset within contracts`. Consequently, the depositing function will consistently revert due to underflow
 
 ### Explanation
 
@@ -94,16 +95,84 @@ To mitigate this vulnerability, it is crucial to implement proper checks when se
 
 ### Explanation
 
-If the owner renounces their ownership, all ownable contracts will be left without an owner. As a result, any function guarded by the `onlyOwner` modifier will no longer be executable. Additionally, the` DEFAULT_ADMIN_ROLE` can be renounced or revoked.
+If the owner renounces their ownership in `LRTConfig.sol`, all ownable contracts will be left without an owner. As a result, any function guarded by the `onlyOwner` modifier will no longer be executable. Additionally, the` DEFAULT_ADMIN_ROLE` can be renounced or revoked.
 
 ### Recommendation
 
 Confirm whether this is the intended behavior. If not, override and disable the `renounceOwnership()` and `revokeRole()` functions in the affected contracts. For added security, consider implementing a two-step process when transferring ownership of the contract (e.g., using Ownable2Step from OpenZeppelin).
 
 ---
+
+## [L&#x2011;4] Possible DoS and Out of Gas errors
+
+### Description
+
+The `LRTDepositPool` contract contains `nodeDelegatorQueue` array, which can lead to uncontrolled growth of the array over time. This uncontrolled growth can result in increased gas costs and potential out-of-gas errors during function calls that read or modify the array. Additionally, it may expose the contract to a denial-of-service (DoS) by causing transactions to run out of gas.
+
+### Impact
+
+- Increased gas costs: As the `nodeDelegatorQueue` array grows, the gas required to execute functions that modify the array (such as `addNodeDelegatorContractToQueue` and `transferAssetToNodeDelegator`) also increases, potentially leading to higher transaction fees for users.
+
+- Possible out-of-gas errors: If the `nodeDelegatorQueue` array becomes too large, it may exceed the gas limit for Ethereum transactions, resulting in out-of-gas errors and failed transactions.
+
+- Denial-of-Service (DoS) potential: An attacker could exploit the uncontrolled growth of the `nodeDelegatorQueue` to launch a DoS attack by repeatedly calling functions that modify the array, causing legitimate transactions to fail due to high gas costs.
+
+### Explanation
+
+The vulnerability arises from the fact that the `nodeDelegatorQueue` array is never reduced in size by removing elements. The contract allows NodeDelegator contract addresses to be added to the queue via the `addNodeDelegatorContractToQueue` function but does not provide a mechanism to remove addresses. As a result, the array can grow indefinitely.
+
+```js
+function addNodeDelegatorContractToQueue(
+    address[] calldata nodeDelegatorContracts
+) external onlyLRTAdmin {
+    uint256 length = nodeDelegatorContracts.length;
+    if (nodeDelegatorQueue.length + length > maxNodeDelegatorCount) {
+        revert MaximumNodeDelegatorCountReached();
+    }
+
+    for (uint256 i; i < length; ) {
+        UtilLib.checkNonZeroAddress(nodeDelegatorContracts[i]);
+        nodeDelegatorQueue.push(nodeDelegatorContracts[i]);
+        emit NodeDelegatorAddedinQueue(nodeDelegatorContracts[i]);
+        unchecked {
+            ++i;
+        }
+    }
+}
+```
+
+The above function allows `NodeDelegator` contract addresses to be added to the `nodeDelegatorQueue`, but there is no corresponding function to remove addresses from the queue when they are no longer needed or have fulfilled their purpose.
+
+### Proof of Concept
+
+This vulnerability can be demonstrated by deploying the `LRTDepositPool` contract and repeatedly adding NodeDelegator contract addresses to the `nodeDelegatorQueue` using the `addNodeDelegatorContractToQueue` function. As addresses are added, the array will grow without limit.
+
+```js
+// Deploy LRTDepositPool contract
+// ...
+
+// Repeatedly add NodeDelegator contract addresses to the queue
+for (uint256 i = 0; i < 1000; i++) {
+    lrtDepositPool.addNodeDelegatorContractToQueue([nodeDelegatorAddress]);
+}
+```
+
+As a result, the `nodeDelegatorQueue` will continue to grow, potentially leading to increased gas costs and potential out-of-gas errors during the addition of addresses.
+
+### Tools Used
+
+Manual code review and analysis.
+
+### Recommended Mitigation Steps
+
+To address this vulnerability, it is recommended to implement a mechanism to remove or "pop" elements from the `nodeDelegatorQueue` when `NodeDelegator` contract addresses are no longer needed or have fulfilled their purpose. This can be achieved by adding a function to remove addresses from the queue or `pop` elements in the end of `transferAssetToNodeDelegator()` function when the asset is already transferred (the second possible solution is just an example mitigation step).
+
 ---
 
-## [NC&#x2011;1] Implement a check to determine if the `NodeDelegator` already exists within the `LRTDepositPool.sol#addNodeDelegatorContractToQueue()` function.
+---
+---
+
+## [NC&#x2011;1] Implement a check to determine if the `NodeDelegator` already exists within the `LRTDepositPool.sol#addNodeDelegatorContractToQueue()` function
 
 ### Explanation
 
@@ -143,7 +212,7 @@ By implementing this check, the `addNodeDelegatorContractToQueue` function will 
 
 ---
 
-## [NC&#x2011;2] A malicious user can disrupt the logic of the `LRTDepositPool.sol` contract by directly transferring `assets` to the `LRTDepositPool`, `NodeDelegator` or `EigenLayer Strategy` contracts.
+## [NC&#x2011;2] A malicious user can disrupt the logic of the `LRTDepositPool.sol` contract by directly transferring `assets` to the `LRTDepositPool`, `NodeDelegator` or `EigenLayer Strategy` contracts
 
 ### Explanation
 
@@ -151,15 +220,15 @@ This will disrupt the intended `deposit()` functioning of the contract and the a
 
 ---
 
-## [NC&#x2011;3] Grant the `LRT Manager` permissions during the initialization of the `LRTDepositPool` contract.
+## [NC&#x2011;3] Grant the `LRT Manager` permissions during the initialization of the `LRTDepositPool` contract
 
 ---
 
-## [NC&#x2011;4] Grant `MINTER_ROLE` and `BURNER_ROLE` permissions during the initialization of the `RSETH` contract.
+## [NC&#x2011;4] Grant `MINTER_ROLE` and `BURNER_ROLE` permissions during the initialization of the `RSETH` contract
 
 ---
 
-## [NC&#x2011;5] Implement a function for removing assets from `supportedAssets` only if the asset has not already been transferred to the `NodeDelegator` contract.
+## [NC&#x2011;5] Implement a function for removing assets from `supportedAssets` only if the asset has not already been transferred to the `NodeDelegator` contract
 
 ### Explanation
 
