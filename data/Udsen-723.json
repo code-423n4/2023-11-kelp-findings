@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Udsen",
+  "risk": "2",
+  "title": "UNHANDLED CHAINLINK PRICE FEED REVERT, WILL `DoS` THE ASSET DEPOSIT FUNCTIONALITY OF THE `LRTDepositPool` CONTRACT",
+  "issueId": 723,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/723"
+}
