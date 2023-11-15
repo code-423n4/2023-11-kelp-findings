@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "pep7siup",
+  "risk": "2",
+  "title": "Initial depositor can manipulate the rsETH price, forcing future LST stakers to receive ZERO rsETH",
+  "issueId": 557,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/557"
+}
