@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "turvy_fuzz",
+  "risk": "2",
+  "title": "All protocol pricing operations could be affected if an asset no longer gets supported on EigenLayer due to permanent asset supporting",
+  "issueId": 859,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/859"
+}
