@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "adeolu",
+  "risk": "2",
+  "title": "getAssetCurrentLimit() may revert even if deposits were not made up to the limit ",
+  "issueId": 705,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/705"
+}
