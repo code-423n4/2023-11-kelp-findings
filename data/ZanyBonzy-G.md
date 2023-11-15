@@ -67,3 +67,17 @@ NodeDelegator.sol [L111](https://github.com/code-423n4/2023-11-kelp/blob/f751d75
         return IStrategy(strategy).userUnderlyingView(address(this));
 ```
 NodeDelegator.sol [L123](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L123)
+
+
+### 4. `x = x + y` is cheaper than `x += y;`
+
+```
+            totalETHInPool += totalAssetAmt * assetER;
+```
+LRTOracle.sol [L71](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L71)
+
+```
+            assetLyingInNDCs += IERC20(asset).balanceOf(nodeDelegatorQueue[i]);
+            assetStakedInEigenLayer += INodeDelegator(nodeDelegatorQueue[i]).
+```
+LRTDepositPool.sol [83-84](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTDepositPool.sol#L82C42-L84C101)
