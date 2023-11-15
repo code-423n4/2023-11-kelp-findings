@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "crunch",
+  "risk": "3",
+  "title": "Less rsETH is minted to user due to incorrect calculation of rsETH amount to mint",
+  "issueId": 427,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/427"
+}
