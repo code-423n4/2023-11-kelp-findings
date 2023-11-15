@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "ast3ros",
+  "risk": "2",
+  "title": "Lack of Effective Pause Control in LRT Oracle",
+  "issueId": 597,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/597"
+}
