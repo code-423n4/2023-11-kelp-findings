@@ -47,3 +47,10 @@ QA5. getAssetPrice() fails to check that assetPriceOracle[asset] == address(0). 
 [https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L45-L47](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/LRTOracle.sol#L45-L47)
 
 Mitigation: check and ensure assetPriceOracle[asset] != address(0).
+
+QA6. NodeDelegator.transferBackToLRTDepositPool() fails to check that lrtDepositPool != address(0).
+When lrtDepositPool == address(0), the function will send tokens to the zero address. 
+
+[https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L84](https://github.com/code-423n4/2023-11-kelp/blob/f751d7594051c0766c7ecd1e68daeb0661e43ee3/src/NodeDelegator.sol#L84)
+
+Mitigation: check and make sure lrtDepositPool != address(0)
