@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "Matin",
+  "risk": "3",
+  "title": "Duplicate nodeDelegator contract addresses can be mistakenly added and this will affect the asset distribution data",
+  "issueId": 648,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/648"
+}
