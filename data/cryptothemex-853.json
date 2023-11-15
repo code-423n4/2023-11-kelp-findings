@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "cryptothemex",
+  "risk": "3",
+  "title": "Biased `rsETH` price calculation in `depositAsset` results in lesser `rsETH` minted to user",
+  "issueId": 853,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/853"
+}
