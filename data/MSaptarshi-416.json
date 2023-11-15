@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "MSaptarshi",
+  "risk": "2",
+  "title": "using of safeTransfer instead of transfer",
+  "issueId": 416,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/416"
+}
