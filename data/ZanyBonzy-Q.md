@@ -89,3 +89,5 @@ It protects from sending more than the contract's balance or 0 amount.
         emit MaxNodeDelegatorCountUpdated(maxNodeDelegatorCount);
     }
 ```
+
+8. The protocol uses `stETH` as one of its base assets. stETH is a token subject to variable balances, it rebases both positively and negatively. This token type is a source of accounting issue, which consequently leads inflates/deflates the amount of `rsETH` tokens that the user gets. The protocol also doesn't implement balance checks before the `transfer` and `transferFrom` calls are made. Recommend introducing a balance before and after check before calling the safe transfer options to ensure accurate accounting. Note that this might leave the contract vulnerable to reentrancy, the reentrancy guard should be implemented.
