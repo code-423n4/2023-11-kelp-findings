@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "rouhsamad",
+  "risk": "2",
+  "title": "LRTDepositPool and Oracle contracts could become completely disabled because of a bad NodeDelegator",
+  "issueId": 755,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/755"
+}
