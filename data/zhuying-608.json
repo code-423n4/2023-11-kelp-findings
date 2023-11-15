@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "zhuying",
+  "risk": "3",
+  "title": "Directly transfer asset to depositPool or nodeDelegator will impact rsETH price",
+  "issueId": 608,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/608"
+}
