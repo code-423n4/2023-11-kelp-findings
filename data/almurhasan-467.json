@@ -1,0 +1,8 @@
+{
+  "contest": 305,
+  "handle": "almurhasan",
+  "risk": "2",
+  "title": "There are missing checks in the function updateAssetStrategy.",
+  "issueId": 467,
+  "issueUrl": "https://github.com/code-423n4/2023-11-kelp-findings/issues/467"
+}
